@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章详细内容</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/artinfo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        var addfab="<{:U('addfab')}>";
+        var userid="<{$_SESSION['user_id']}>";
+        var id="<{$_GET['id']}>";
+        var collhand="<{:U('collhand')}>";
+        var addcomment="<{:U('addcomment')}>";
+        var addreplay="<{:U('addreplay')}>";
+        var subhand="<{:U('subhand')}>";
+    </script>
+    <script src="../Public/Js/artinfo.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <section class="art">
+                <h1><{$art[0]['title']}></h1>
+                <div class="info">
+                    <p><span>时间</span> <span><{:date('Y-m-d H:i:s',$art[0]['time'])}></span><img src="../Public/Images/2017-01-11_172408.png"><a href="__APP__/Site/siteartall/id/<{$art[0]['si']}>" class="lin"><{$art[0]['sn']}></a></p>
+                    <p><span>原文</span><a href="<{$art[0]['link']}>" class="lin" target="_blank" ><{$art[0]['link']}></a> </p>
+                    <p><span>主题</span><a href="__APP__/Theme/theartall/id/<{$art[0]['ti']}>" class="zlin"><{$art[0]['tn']}></a> </p>
+                </div>
+                <div class="con">
+                   <{:htmlspecialchars_decode($art[0]['content'])}>
+                </div>
+                <if condition="$isfab eq 1">
+                    <div class="fabulous" style="background-position:-6px -7px;"></div>
+                    <else/>
+                    <div class="fabulous" style="background-position:-6px -87px;"></div>
+                </if>
+                <div class="fabtip"></div>
+                <div class="share">
+                    <div class="sha-le">
+                        <span>分享</span>
+                        <div class="bdsharebuttonbox" data-tag="share_1">
+                            <a class="bds_mshare" data-cmd="mshare"></a>
+                            <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+                            <a class="bds_tsina" data-cmd="tsina"></a>
+                            <a class="bds_baidu" data-cmd="baidu"></a>
+                            <a class="bds_renren" data-cmd="renren"></a>
+                            <a class="bds_tqq" data-cmd="tqq"></a>
+                            <a class="bds_more" data-cmd="more">更多</a>
+                            <a class="bds_count" data-cmd="count"></a>
+                        </div>
+                        <script>
+                            window._bd_share_config = {
+                                common : {
+                                    bdText : "<{$art[0]['title']}>",
+                                    bdDesc : '',
+                                    bdUrl : "<{$art[0]['link']}>",
+                                    bdPic : ''
+                                },
+                                share : [{
+                                    "bdSize" : 16
+                                }],
+                                slide : [{
+                                    bdImg : 0,
+                                    bdPos : "left",
+                                    bdTop : 100
+                                }],
+                                selectShare : [{
+                                    "bdselectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf']
+                                }]
+                            }
+                            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+                        </script>
+                    </div>
+                    <div class="sha-ri">
+                        <div class="coll">
+                            <if condition="$iscoll eq 1">
+                                <img src="../Public/Images/2017-01-12_164828.png">
+                                <span>已收藏</span>
+                                <else/>
+                                <img src="../Public/Images/2017-01-11_180151.png">
+                                <span>收藏</span>
+                            </if>
+                        </div>
+                        <div class="fabtip"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+            <section class="recommend">
+                 <h1>推荐文章</h1>
+                 <foreach name="res" item="row">
+                        <p><span><{$key+1}>.</span><a href="__URL__/artinfo/id/<{$row['id']}>"><{$row['title']}></a> </p>
+                 </foreach>
+            </section>
+            <section class="comment">
+                  <h1>我来评几句</h1>
+                   <p class="error">评论不能为空</p>
+                  <form>
+                      <div class="form-group">
+                        <textarea name="comment" placeholder="请输入评论内容..."></textarea>
+                      </div>
+                      <div class="form-group third">
+                          <p>已发表评论数(<span><{$iscommen}></span>)</p>
+                          <if condition="isset($_SESSION['user_id'])">
+                                <input type="button" value="发表评论">
+                                <else/>
+                                <input type="button" value="登录后评论">
+                          </if>
+                          <div class="clear"></div>
+                      </div>
+                  </form>
+            </section>
+            <section class="comment-info">
+                <foreach name="comments" item="row">
+                      <figure>
+                          <if condition="$row['img'] eq ''">
+                              <img src="__PUBLIC__/Images/man.jpg" class="head" >
+                              <else/>
+                              <img src="__PUBLIC__/Uploads/headport/<{$row['img']}>"  alt="" class="head">
+                          </if>
+                          <figcaption>
+                              <p><span><{$row['username']}></span><time><{:date('m-d H:i',$row['time'])}></time></p>
+                              <p class="comment-con"><{$row['content']}></p>
+                          </figcaption>
+                          <a href="javascript:" class="reply" rename="<{$row['username']}>" reid="<{$row['id']}>">回复</a>
+                          <foreach name="row['replays']" item="row2">
+                              <div class="reps">
+                                  <if condition="$row2['img'] eq ''">
+                                      <img src="__PUBLIC__/Images/man.jpg"  >
+                                      <else/>
+                                      <img src="__PUBLIC__/Uploads/headport/<{$row2['img']}>">
+                                  </if>
+                                  <div class="reps-co">
+                                      <p><span><{$row2['username']}></span><span>回复了他</span><time><{:date('m-d H:i',$row2['time'])}></time></p>
+                                      <p class="comment-con"><{$row2['content']}></p>
+                                  </div>
+                              </div>
+                          </foreach>
+                          <div class="clear"></div>
+                      </figure>
+
+                </foreach>
+                    <div class="re">
+                        <form>
+                            <h1>回复<span class="direct"></span><span class="close">X</span></h1>
+                            <textarea></textarea>
+                            <button type="button">确认</button>
+                        </form>
+                    </div>
+            </section>
+            <div class="manu"><{$show}></div>
+        </article>
+        <aside>
+            <section class="about">
+                <h1>相关站点</h1>
+                <figure>
+                    <img src="__PUBLIC__/Uploads/sitelogo/<{$art[0]['sm']}>">
+                    <figcaption>
+                        <p><a href="__APP__/Site/siteartall/id/<{$art[0]['si']}>"><{$art[0]['sn']}></a> </p>
+                        <if condition="$issub eq 1">
+                            <button class="subed">已订阅</button>
+                            <else/>
+                            <button class="nosub">+订阅</button>
+                        </if>
+                    </figcaption>
+                    <div class="clear"></div>
+                </figure>
+            </section>
+            <section class="recommend hot">
+                <h1>热门文章</h1>
+                <foreach name="arts" item="row">
+                    <p><span><{$key+1}>.</span><a href="__URL__/artinfo/id/<{$row['id']}>"><{$row['title']}></a> </p>
+                </foreach>
+            </section>
+            <section class="adver">
+                <foreach name="advers" item="row">
+                    <figure>
+                        <a href="<{$row['link']}>" target="_blank"> <img src="__PUBLIC__/Uploads/adverimg/<{$row['img']}>"></a>
+                    </figure>
+                </foreach>
+            </section>
+        </aside>
+        <div class="clear"></div>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

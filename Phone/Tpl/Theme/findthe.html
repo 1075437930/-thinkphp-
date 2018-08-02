@@ -1,0 +1,20 @@
+<if condition="isset($sits)">
+    <foreach name="sits" item="row">
+        <figure class="jia">
+            <img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>">
+            <figcaption>
+                <a href="__APP__/Theme/theartall/id/<{$row['id']}>"><{$row['name']}></a>
+                <if condition="$row['count'] eq 1">
+                    <button class="subed" vid="<{$row['id']}>">已订阅</button>
+                    <else/>
+                    <button class="nosub" vid="<{$row['id']}>">+订阅</button>
+                </if>
+            </figcaption>
+            <div class="clear"></div>
+        </figure>
+    </foreach>
+    <else/>
+   <div class="none">
+       暂无相关主题
+   </div>
+</if>

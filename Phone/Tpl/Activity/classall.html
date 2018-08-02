@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签下的所有活动</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link rel="stylesheet" href="../Public/Css/acticlassall.css">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/header.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="container">
+        <article>
+            <h1><span>标签"</span><span><{$actis[0]['cn']}></span><span>"的活动</span></h1>
+            <foreach name="actis" item="row">
+                <div class="con">
+                    <div class="row">
+                        <div class="col-xs-9">
+                        <div class="le">
+                            <h2><a href="__APP__/Activity/activinfo/id/<{$row['id']}>"><{$row['title']}></a> </h2>
+                            <p><span class="dd">地点:</span><span><{$row['tn']}></span><span>-</span><span><{$row['info']}></span></p>
+                            <p class="tw"><span class="dd">时间:</span><span><{:date('m-d H:i',$row['start'])}></span><span>~</span><span><{:date('m-d H:i',$row['end'])}></span></p>
+                        </div>
+                        </div>
+                        <div class="col-xs-3">
+                         <if condition="time() lt $row['start']">
+                            <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" class="ri">报名中</a>
+                             <else/>
+                             <if condition="time() egt $row['start'] && time() lt $row['end']">
+                                 <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #FAA732" class="ri">进行中</a>
+                                 <else/>
+                                 <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #BBBBBB" class="ri">已结束</a>
+                             </if>
+                         </if>
+                        </div>
+                    </div>
+                </div>
+            </foreach>
+            <div class="inter"></div>
+            <div class="manu"><{$show}></div>
+        </article>
+    </div>
+</body>
+</html>

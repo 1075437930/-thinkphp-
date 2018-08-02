@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>站点下所有文章</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/siteartall.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function(){
+            $('.ingo button').click(function(){
+                obj=$(this);
+                if(obj.html()=='+订阅'){
+                    $.ajax({
+                        url:"<{:U('subhand')}>",
+                        type:"get",
+                        data:{sub:1,article:"<{$_GET['id']}>"},
+                        success:function(data){
+                            if(data==1){
+                                obj.html('已订阅').removeClass('nosub').addClass('subed')
+                            }
+                        }
+                    })
+                }else {
+                    $.ajax({
+                        url:"<{:U('subhand')}>",
+                        type:"get",
+                        data:{sub:0,article:"<{$_GET['id']}>"},
+                        success:function(data){
+                            if(data==0){
+                                obj.html('+订阅').removeClass('subed').addClass('nosub')
+                            }
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <section class="site-top">
+                <img src="__PUBLIC__/Uploads/sitelogo/<{$site['img']}>">
+                 <div class="ingo">
+                     <h1 class="na"><a href="<{$site['link']}>" target="_blank"><{$site['name']}></a> </h1>
+                     <if condition="$issub eq 1">
+                        <button class="subed">已订阅</button>
+                        <else/>
+                         <button class="nosub">+订阅</button>
+                     </if>
+                 </div>
+                <div class="clear"></div>
+            </section>
+            <section class="arts">
+                <if condition="isset($arts)">
+                <foreach name="arts" item="row">
+                    <figure>
+                        <figcaption>
+                            <h2><a href="<{$row['link']}>" target="_blank"><{$row['title']}></a></h2>
+                            <div class="con">
+                                <{$row['content']}>
+                            </div>
+                            <p>
+                                <a href="__APP__/Article/artinfo/id/<{$row['id']}>" class="inside">[站内阅读]</a>
+                                <div class="clear"></div>
+                            </p>
+                            <p><i class="clock"></i><time><{:date('m-d H:i',$row['time'])}></time></p>
+                        </figcaption>
+                        <img class="arr" src="../Public/Images/2017-01-12_185718.png">
+                        <i class="poin"></i>
+                        <img src="<{$row['img']}>" class="pic">
+                        <div class="clear"></div>
+                    </figure>
+                </foreach>
+                    <else/>
+                    <div class="empt"><img src="../Public/Images/212.jpg"><span>此站点下暂无收录文章</span></div>
+                </if>
+            </section>
+            <div class="manu"><{$show}></div>
+        </article>
+        <aside>
+            <section>
+                <h1>相关站点</h1>
+                <foreach name="sites" item="row">
+                    <div class="about">
+                        <img src="__PUBLIC__/Uploads/sitelogo/<{$row['img']}>">
+                        <a href="__APP__/Site/siteartall/id/<{$row['id']}>"><{$row['name']}></a>
+                    </div>
+                </foreach>
+            </section>
+        </aside>
+        <div class="clear"></div>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

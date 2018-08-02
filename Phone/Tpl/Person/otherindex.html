@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><{$_GET['name']}>的主页</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/otherindex.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function(){
+            $('.info ul li a').hover(function(){
+                $(this).css({'color':'#0AA284'})
+            },function(){
+                $(this).css({'color':'#606060'})
+            });
+            if(!"<{$_GET['change']}>"){
+                $('.dyli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.dyli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+            }
+
+            if("<{$_GET['change']}>"=='theme'){
+                $('.theli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.theli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+            }
+
+            if("<{$_GET['change']}>"=='collection'){
+                $('.collli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.collli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+            }
+
+            if("<{$_GET['change']}>"=='fabulous'){
+                $('.fabli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.fabli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+            }
+
+        })
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <section class="tou">
+                <if condition="!empty($user['img'])">
+                    <img src="__PUBLIC__/Uploads/headport/<{$user['img']}>"/>
+                    <else/>
+                    <img src="/kt/Public/Images/man.jpg"/>
+                </if>
+                <p><{$user['username']}></p>
+            </section>
+            <section  class="info">
+                <ul>
+                    <li class="dyli"><a href="__APP__/Person/otherindex/id/<{$_GET['id']}>/name/<{$_GET['name']}>">动态</a> </li>
+                    <li class="theli"><a href="__APP__/Person/otherindex/id/<{$_GET['id']}>/name/<{$_GET['name']}>/change/theme">主题</a> </li>
+                    <li class="collli"><a href="__APP__/Person/otherindex/id/<{$_GET['id']}>/name/<{$_GET['name']}>/change/collection">收藏</a> </li>
+                    <li class="fabli"><a href="__APP__/Person/otherindex/id/<{$_GET['id']}>/name/<{$_GET['name']}>/change/fabulous">点赞</a> </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="info-con">
+                    <if condition="!isset($_GET['change'])">
+                        <if condition="!empty($dys)">
+                            <foreach name="dys" item="row">
+                                <div class="dynamic">
+                                    <div class="dynamic-le">
+                                        <p><{$row['tip']}></p>
+                                        <a href="<{$row['link']}>"><{$row['sn']}></a>
+                                    </div>
+                                    <time><{:date('m-d H:i',$row['time'])}></time>
+                                    <div class="clear"></div>
+                                </div>
+                            </foreach>
+                            <else/>
+                            <div class="no">
+                                没有任何动态~~~
+                            </div>
+                        </if>
+                    </if>
+                    <if condition="$_GET['change'] eq 'theme'">
+                        <div class="thecon">
+                            <if condition="!empty($thes)">
+                                <foreach name="thes" item="row">
+                                    <figure>
+                                        <a href="__APP__/Theme/theartall/id/<{$row['ti']}>"><img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>"/></a>
+                                        <figcaption> <a href="__APP__/Theme/theartall/id/<{$row['ti']}>"> <{$row['tn']}></a></figcaption>
+                                    </figure>
+                                </foreach>
+                                <else/>
+                                <div class="no">
+                                    没有订阅任何主题
+                                </div>
+                            </if>
+                            <div class="clear"></div>
+                        </div>
+                    </if>
+                    <if condition="$_GET['change'] eq 'collection'">
+                        <div class="collcon">
+                            <if condition="!empty($colls)">
+                                <foreach name="colls" item="row">
+                                    <div class="piece">
+                                        <div class="the-le">
+                                            <a href="__APP__/Article/artinfo/id/<{$row['ai']}>"><span class="tit"><{$row['an']}></span><{$row['content']}></a>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <span class="the-ri"><{:date('m-d H:i',$row['tt'])}></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </foreach>
+                                <div class="manu"><{$show}></div>
+                                <else/>
+                                <div class="no">
+                                    没有收藏的文章
+                                </div>
+                            </if>
+                        </div>
+                    </if>
+                    <if condition="$_GET['change'] eq 'fabulous'">
+                        <div class="fabcon">
+                            <if condition="!empty($fabs)">
+                                <foreach name="fabs" item="row">
+                                    <div class="piece">
+                                        <div class="the-le">
+                                            <a href="__APP__/Article/artinfo/id/<{$row['si']}>"><span class="tit"><{$row['sn']}></span></a>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <span class="the-ri"><{:date('m-d H:i',$row['tt'])}></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </foreach>
+                                <div class="manu"><{$show}></div>
+                                <else/>
+                                <div class="no">
+                                    没有赞过文章
+                                </div>
+                            </if>
+                        </div>
+                    </if>
+                    <div class="separate"></div>
+                </div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>

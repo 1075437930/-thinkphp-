@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资讯网</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Public/Css/index.css" >
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function(){
+            $('.log').click(function(){
+                location="<{:U('Login/login')}>";
+            })
+        })
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <section class="hot">
+                <h1><a href="__APP__/Article/index">热门文章</a></h1>
+                <foreach name="arts" item="row">
+                    <div class="item">
+                        <h2><a href="__APP__/Article/artinfo/id/<{$row['id']}>" target="_blank"><{$row['title']}></a></h2>
+                        <p><span><{$row['tn']}></span><span><{:date('m-d H:i',$row['time'])}></span></p>
+                    </div>
+                </foreach>
+                <div class="more">
+                    <a href="__APP__/Article/index">查看更多</a>
+                </div>
+            </section>
+            <section class="adver">
+                <a href="<{$advers[0]['link']}>" target="_blank"><img src="__PUBLIC__/Uploads/adverimg/<{$advers[0]['img']}>"  alt="广告" width="100%"></a>
+            </section>
+            <section class="course">
+                <h1><a href="__APP__/Course/index">课程推荐</a></h1>
+                <foreach name="courses" item="row">
+                    <figure>
+                        <a href="__APP__/Course/courinfo/id/<{$row['id']}>" class="fig"><img src="__PUBLIC__/Uploads/courimg/<{$row['img']}>" alt=""></a>
+                        <figcaption><a href="__APP__/Course/courinfo/id/<{$row['id']}>" ><{$row['title']}></a> </figcaption>
+                    </figure>
+                </foreach>
+                <div class="more">
+                    <a href="__APP__/Course/index">查看更多</a>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section class="adver">
+                <a href="<{$advers[1]['link']}>" target="_blank"><img src="__PUBLIC__/Uploads/adverimg/<{$advers[1]['img']}>"  alt="广告" width="100%"></a>
+            </section>
+            <section class="hot">
+                <h1><a href="__APP__/Activity/index">近期活动</a></h1>
+                <foreach name="acts" item="row">
+                    <div class="item">
+                        <h2><a href="__APP__/Activity/activinfo/id/<{$row['id']}>"><{$row['title']}></a></h2>
+                        <p><span><{$row['city']}>&nbsp;-&nbsp;<{$row['info']}></span><span><{:date('m-d H:i',$row['start'])}></span></p>
+                    </div>
+                </foreach>
+                <div class="more">
+                    <a href="__APP__/Activity/index">查看更多</a>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <section class="brief">
+                <h1>IT人专属个性阅读社区</h1>
+                <p>资讯网以技术为驱动，以聚合挖掘为核心，打造个性推荐和订阅，给你一站式的阅读。 更汇聚优质公开课和线下活动，让信息知识获取更便捷。 万千网友汇聚于此，公诸同好，交流学习。</p>
+                <button class="log">登录/注册</button>
+            </section>
+
+            <section class="app2">
+                <figure>
+                    <a href="<{$advers2[0]['link']}>" target="_blank"><img src="__PUBLIC__/Uploads/adverimg/<{$advers2[0]['img']}>" alt=""></a>
+                </figure>
+            </section>
+            <section class="theme">
+                <h1>热门主题</h1>
+                <foreach name="thes" item="row">
+                    <figure>
+                        <a href="__APP__/Theme/theartall/id/<{$row['id']}>"><img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>" alt=""></a>
+                        <figcaption><sapn><{$row['name']}></sapn></figcaption>
+                    </figure>
+                </foreach>
+                <div class="clear"></div>
+            </section>
+            <section class="adver">
+                <a href="<{$advers2[1]['link']}>" target="_blank"><img src="__PUBLIC__/Uploads/adverimg/<{$advers2[1]['img']}>" alt=""></a>
+            </section>
+            <section class="theme">
+                <h1>新新站点</h1>
+                <foreach name="sits" item="row">
+                    <figure>
+                        <a href="__APP__/Site/siteartall/id/<{$row['id']}>"><img src="__PUBLIC__/Uploads/sitelogo/<{$row['img']}>" alt=""></a>
+                    </figure>
+                </foreach>
+                <div class="clear"></div>
+            </section>
+            <section class="theme">
+                <h1>TA在这里</h1>
+                <foreach name="users" item="row">
+                    <figure >
+                        <a href="__APP__/Person/otherindex/id/<{$row['id']}>/name/<{$row['username']}>">
+                            <if condition="$row['img'] eq ''">
+                               <img src="__PUBLIC__/Images/man.jpg">
+                                <else/>
+                                <img src="__PUBLIC__/Uploads/headport/<{$row['img']}>" alt="">
+                            </if>
+                        </a>
+                    </figure>
+                </foreach>
+                <div class="clear"></div>
+            </section>
+        </aside>
+        <div class="clear"></div>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

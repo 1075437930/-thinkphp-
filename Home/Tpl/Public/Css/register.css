@@ -1,0 +1,58 @@
+.content section h1{
+    font-weight: 100;
+    border-bottom: 1px solid #16A085;
+    width: 136%;
+}
+
+.xi {
+    margin-left: 30px;
+}
+.by {
+    margin-left: 14px;
+}
+
+
+.form-group input[type='text'], .form-group input[type='password'] {
+    width: 214px;
+}
+
+input[type="submit"] {
+    width: 212px;
+    background: #16A085;
+    color: white;
+    height: 30px;
+    border: 1px solid #3BB59D;
+    cursor: pointer;
+    margin-left: 69px;
+}
+.err {
+    background-color: #FEF2F2;
+    border: 1px solid #FFB4A8;
+    width: 225px;
+    margin-top: 3px;
+    margin-left: 71px;
+    font-size: 13px;
+    line-height: 24px;
+    height: 24px;
+    color: #6C6C6C;
+    display: none;
+}
+.form-group img {
+    float: right;
+    margin-top: 7px;
+    width: 83px;
+    height: 28px;
+}
+
+.error1 {
+    margin-top: 6px;
+    background: #F2DEDE;
+    height: 39px;
+    color: #B94A48;
+    line-height: 33px;
+    border-radius: 15px;
+    text-indent: 17px;
+    width: 391px!important;
+    margin-left: 31px!important;
+    display: none;
+}

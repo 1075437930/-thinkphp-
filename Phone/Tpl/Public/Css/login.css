@@ -1,0 +1,82 @@
+.content{
+    height: 400px;
+}
+.content section {
+    width: 370px;
+    margin: 0 auto;
+}
+.content section h1 {
+    border-bottom: 2px solid #16A085;
+    width: 90%;
+
+}
+.main form .form-group{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 12px;
+    position: relative;
+}
+.main .form-group input[type='text'],.form-group input[type='password']{
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    border-radius: 7px;
+    width: 284px;
+    text-indent: 11px;
+    line-height: 30px;
+}
+.main .form-group input[type='checkbox']{
+    margin-right: 10px;
+}
+.bimg {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+.main .form-group span,.form-group a{
+    font-size: 13px;
+}
+.main .form-group span {
+    margin-right: 18px;
+}
+.main input[type="submit"] {
+    width: 145px;
+    background: #16A085;
+    color: white;
+    height: 30px;
+    border: 1px solid #3BB59D;
+    cursor: pointer;
+    line-height: 30px;
+}
+.main input[type="button"] {
+    width: 85px;
+    margin-left: 33px;
+    height: 30px;
+    background: white;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    line-height: 30px;
+}
+.error1 {
+    margin-top: 6px;
+    background: #F2DEDE;
+    height: 39px;
+    color: #B94A48;
+    line-height: 33px;
+    border-radius: 15px;
+    text-indent: 17px;
+    width: 282px;
+}
+.err {
+    background-color: #FEF2F2;
+    border: 1px solid #FFB4A8;
+    width: 251px;
+    margin-top: 3px;
+    height: 24px;
+    color: #6C6C6C;
+}
+p.err img {
+    margin-top: 3px;
+    float: left;
+    margin-right: 4px;
+    margin-left: 4px;
+}

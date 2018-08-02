@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看主题</title>
+    <link href="../Public/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <style>
+        td {
+            vertical-align: middle!important;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table class="table table table-striped table-bordered table-hover table-condensed">
+    <tr>
+        <th class="text-center">主题</th>
+        <th class="text-center">图片</th>
+        <th class="text-center">所属类别</th>
+        <th class="text-center">文章数</th>
+        <th class="text-center">订阅数</th>
+        <th class="text-center">修改</th>
+        <th class="text-center">删除</th>
+    </tr>
+    <foreach name="rows" item="row">
+        <tr>
+            <td>
+                <{$row['name']}>
+            </td>
+            <td>
+                <img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>" width="50px">
+            </td>
+            <td>
+                <{$row['cn']}>
+            </td>
+            <td>
+                <{$row['num']}>
+            </td>
+            <td>
+                <{$row['subnum']}>
+            </td>
+            <td>
+                <a href="__URL__/edit/id/<{$row['id']}>/name/<{$row['name']}>/class/<{$row['class_id']}>"><span class="glyphicon glyphicon-wrench"></span></a>
+            </td>
+            <td>
+                <a href="__URL__/delete/id/<{$row['id']}>"><span class="glyphicon glyphicon-remove-sign"></span></a>
+            </td>
+        </tr>
+    </foreach>
+    <tr>
+        <td colspan="9" class="manu"><{$show}></td>
+    </tr>
+</table>
+</body>
+</html>

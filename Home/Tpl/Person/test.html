@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <foreach name="clas" item="row">
+        <p><{$row['name']}></p>
+        <foreach name="row['sits']" item="row2">
+            <ul>
+                <li><{$row2['name']}></li>
+            </ul>
+        </foreach>
+        <div><{$row['show']}></div>
+    </foreach>
+    <div><{$show1}></div>
+</body>
+</html>

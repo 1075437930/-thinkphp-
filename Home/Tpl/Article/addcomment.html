@@ -1,0 +1,12 @@
+<figure>
+    <if condition="$_SESSION['img'] eq ''">
+        <img src="__PUBLIC__/Images/man.jpg" class="head" width="60px" height="40px">
+        <else/>
+        <img src="__PUBLIC__/Uploads/headport/<{$_SESSION['img']}>" width="60px" height="40px" alt="" class="head">
+    </if>
+    <figcaption>
+        <p><span><{$_SESSION['username']}></span><time><{:date('m-d H:i',time())}></time></p>
+        <p class="comment-con"><{$_POST['content']}></p>
+    </figcaption>
+    <div class="clear"></div>
+</figure>

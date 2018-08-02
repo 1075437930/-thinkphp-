@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章区</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/artindex.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        var change="<{$_GET['change']}>";
+    </script>
+    <script src="../Public/Js/artindex.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <nav class="artna">
+                <ul>
+                    <li class="comm"><a href="<{:U('index')}>">推荐</a> </li>
+                    <li class="hot"><a href="<{:U('index','change=hot')}>">热门</a> </li>
+                    <li class="science"><a href="<{:U('index','change=science')}>">科技</a> </li>
+                    <li class="Investment"><a href="<{:U('index','change=Investment')}>">创投</a> </li>
+                    <li class="Digital"><a href="<{:U('index','change=Digital')}>">数码</a> </li>
+                    <li class="technology"><a href="<{:U('index','change=technology')}>">技术</a> </li>
+                    <li class="Design"><a href="<{:U('index','change=Design')}>">设计</a> </li>
+                    <li class="Marketing"><a href="<{:U('index','change=Marketing')}>">营销</a> </li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <foreach name="arts" item="row">
+                <figure>
+                    <figcaption>
+                        <h1><a href="__APP__/Article/artinfo/id/<{$row['id']}>"><{$row['title']}></a> </h1>
+                        <div class="con">
+                            <{$row['content']}>
+                        </div>
+                        <p><i class="s-tb"></i><span><{$row['sn']}> </span><i class="clock"></i><time><{:date('m-d H:i',$row['time'])}></time></p>
+                    </figcaption>
+                    <img src="<{$row['img']}>">
+                    <div class="clear"></div>
+                </figure>
+            </foreach>
+            <div class="manu"><{$show}></div>
+        </article>
+        <aside>
+            <if condition="isset($_SESSION['user_id'])">
+                <section class="set">
+
+                        <figure>
+                            <a href="__APP__/Person/settings/id/<{$_SESSION['user_id']}>">
+                                <if condition="!empty($_SESSION['img'])">
+                                    <img src="__PUBLIC__/Uploads/headport/<{$_SESSION['img']}>">
+                                    <else/>
+                                    <img src="__PUBLIC__/Images/man.jpg"/>
+                                </if>
+                            </a>
+                            <figcaption>
+                                <p class="account"><{$_SESSION['username']}></p>
+                                <p class="option"><a href="__APP__/Person/mycomment/id/<{$_SESSION['user_id']}>">评论</a><span>|</span><a href="__APP__/Person/mycoll/id/<{$_SESSION['user_id']}>">收藏</a>
+                            </figcaption>
+                        </figure>
+                </section>
+                <else/>
+                <section class="no">
+                    <h1>登录，尽享个性阅读</h1>
+                    <div>
+                        <span>1.</span>
+                        <p>智能学习你的兴趣，给你最精准的推荐。</p>
+                        <div class="clear"></div>
+                    </div>
+                    <div>
+                        <span>2.</span>
+                        <p>科技、产品、设计、技术、营销，专注而全面的聚合。</p>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+            </if>
+            <section class="adver">
+                <foreach name="advers" item="row">
+                    <figure>
+                        <a href="<{$row['link']}>" target="_blank"><img src="__PUBLIC__/Uploads/adverimg/<{$row['img']}>"></a>
+                    </figure>
+                </foreach>
+            </section>
+        </aside>
+        <div class="clear"></div>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

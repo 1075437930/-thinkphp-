@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/login.css" rel="stylesheet">
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function() {
+            $('.log').click(function () {
+                location = "<{:U('Login/login')}>";
+            });
+            i = 0;
+            $('.bimg').click(function () {
+                if (i % 2 == 0) {
+                    $(this).attr('src', '/kt/Home/Tpl/Public/Images/2017-01-07_203605.png');
+                    $(this).prev().removeAttr('checked');
+                } else {
+                    $(this).attr('src', '/kt/Home/Tpl/Public/Images/2017-01-07_203526.png');
+                    $(this).prev().attr('checked', '');
+                }
+                i++;
+            });
+
+            if ("<{$_GET['error1']}>") {
+                $('.error1').html("<{$_GET['error1']}>").show();
+            }
+            ;
+
+            if ("<{$_GET['error2']}>") {
+                $('.error1').html("用户名或密码错误").show();
+            }
+            ;
+            $("input[name=user]").on('input propertychange blur', function () {
+                va = $(this).val();
+                if (va) {
+                    $(this).data('nu', 1);
+                    $(this).parent().next().hide();
+                } else {
+                    $(this).data('nu', 0);
+                    $(this).parent().next().show();
+                }
+            });
+            $("input[name=password]").on('input propertychange blur', function () {
+                va = $(this).val();
+                if (va) {
+                    $(this).data('nu', 1);
+                    $(this).parent().next().hide();
+                } else {
+                    $(this).data('nu', 0);
+                    $(this).parent().next().show();
+                }
+            });
+            $('form').submit(function () {
+                $('.auth').blur();
+                tol = 0
+                $('.auth').each(function () {
+                    tol += $(this).data('nu');
+                });
+                if (tol != 2) {
+                    return false;
+                }
+            })
+            $('input[type=button]').click(function () {
+                location = "<{:U('register')}>";
+            })
+        })
+    </script>
+    <style>
+        .error1{
+            display: none;
+        }
+        .err{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <section>
+            <h1>登录</h1>
+            <form method="post" action="__URL__/check">
+                <p class="error1"></p>
+                <div class="form-group">
+                    <input type="text" name="user" placeholder="用户名" class="auth">
+
+                </div>
+                <p class="err"><img src="../Public/Images/2017-01-10_002144.png">用户名不能为空</p>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="密码" class="auth">
+
+                </div>
+                <p class="err"><img src="../Public/Images/2017-01-10_002144.png">密码不能为空</p>
+                <div class="form-group">
+                    <input type="checkbox" name="rem" value="1" checked>
+                    <img src="../Public/Images/2017-01-07_203526.png" class="bimg">
+                    <span>记住我</span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="登录">
+                    <input type="button" value="注册">
+                </div>
+            </form>
+        </section>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

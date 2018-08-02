@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的课程</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/mycourse.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/header.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="container">
+        <article>
+            <section class="course">
+                <h1><a href="__APP__/Course/index">我的收藏</a></h1>
+                <div class="box">
+                    <if condition="!empty($courses)">
+                        <foreach name="courses" item="row">
+                            <figure>
+                                <a href="__APP__/Course/courinfo/id/<{$row['id']}>" class="fig"><img src="__PUBLIC__/Uploads/courimg/<{$row['img']}>" alt=""></a>
+                                <figcaption><a href="__APP__/Course/courinfo/id/<{$row['id']}>" ><{$row['title']}></a> </figcaption>
+                            </figure>
+                        </foreach>
+                        <else/>
+                        <div class="no">
+                            没有收藏的课程
+                        </div>
+                    </if>
+                    <div class="clear"></div>
+                </div>
+                <div class="more manu">
+                    <{$show}>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </article>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.content {
+    width: 1000px;
+    margin: 53px auto;
+    margin-bottom: 26px;
+}
+article{
+    width: 900px;
+    background-color: white;
+}
+.tou {
+    text-align: center;
+    height: 220px;
+}
+.tou img {
+    margin-top: 56px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.info ul{
+    border-bottom: 2px solid #0AA284;
+    width: 95%;
+    margin: 0 auto;
+}
+.info-con {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.info-con a:hover{
+    text-decoration: underline;
+}
+.info ul li {
+    width: 50px;
+    height: 30px;
+    border-bottom: 1px solid white;
+    float: left;
+    text-align: center;
+}
+.info ul li a{
+
+    color: #606060;
+}
+.dynamic-le{
+    float: left;
+}
+.dynamic time{
+    float: right;
+}
+.dynamic {
+    border-bottom: 1px dashed #CCCCCC;
+    height: 70px;
+    padding-top: 12px;
+}
+.dynamic:hover{
+    background-color: #F7F7F7;
+}
+.dynamic-le a {
+    color: #0AA284;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.dynamic-le p {
+    color: #333333;
+    font-size: 14px;
+}
+.dynamic time {
+    float: right;
+    color: #999999;
+    font-size: 13px;
+    margin-right: 7px;
+}
+.no {
+    margin: 0 auto;
+    background-color: #DFF0D8;
+    color: #468847;
+    height: 58px;
+    margin-top: 18px;
+    line-height: 58px;
+    text-indent: 15px;
+    border-radius: 8px;
+}
+.separate{
+    height: 30px;
+}
+.thecon figure {
+    float: left;
+    margin-left: 59px;
+    margin-bottom: 25px;
+}
+
+.thecon figure img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 3px #E5E5E5;
+}
+.thecon figure figcaption a {
+    color: #333333;
+    font-size: 14px;
+}
+.piece:hover{
+    background-color: #EEEEEE;
+}
+.piece {
+    clear: both;
+    width: 98%;
+    height: 45px;
+    margin: 0 auto;
+    border-bottom: 1px solid #E6E6E6;
+    line-height: 45px;
+    cursor: pointer;
+}
+.the-le {
+    float: left;
+    color: #777777;
+    font-size: 15px;
+    overflow: hidden;
+    width: 702px;
+    height: 100%;
+}
+.the-ri {
+    float: right;
+    color: #777777;
+    font-size: 13px;
+    margin-right: 16px;
+}
+.the-le span{
+    float: left;
+}
+.the-le a:hover{
+    color: #777777!important;
+}
+.the-le a{
+    color: #777777;
+}
+span.tit {
+    font-weight: bold;
+    color: #333333;
+    font-size: 15px;
+    margin-right: 12px;
+}
+.litip {
+    color: #0AA284;
+    font-weight: 100;
+    width: 98%;
+    margin: 0 auto;
+}
+.manu {
+    margin-top: 20px!important;
+}

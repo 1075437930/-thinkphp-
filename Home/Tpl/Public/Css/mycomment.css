@@ -1,0 +1,74 @@
+.content {
+    width: 896px;
+    margin: 51px auto;
+    margin-bottom: 26px;
+}
+.content article{
+    background-color: white;
+}
+.content article h1{
+    height: 70px;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #0AA284;
+}
+.content article h1 span {
+    border-bottom: 1px solid #0AA284;
+    color: #0AA284;
+    font-weight: 100;
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 11px;
+}
+.content article section {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.comm-le {
+    float: left;
+    background-color: #6699FF;
+    width: 14%;
+    height: 66px;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    line-height: 29px;
+}
+.comm-ri {
+    float: right;
+    width: 81%;
+}
+.comm-item {
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 14px;
+}
+.comm-item p {
+    margin-bottom: 13px;
+}
+.comm-item p a{
+    color: #0AA284;
+    margin-right: 5px;
+}
+.comm-item p a:hover{
+    text-decoration: underline;
+}
+.con {
+    text-indent: 40px;
+    word-wrap: break-word;
+}
+.comm-item p time{
+    color: #808080;
+}
+.row{
+    margin-bottom: 40px;
+}
+.manu{
+    clear: both;
+}
+.no {
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 21px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/search.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <h1 class="tit">
+                <span>搜索</span>
+                <form action="__URL__/index" method="GET">
+                    <input type="text" name="key">
+                    <select name="type">
+                        <if condition="isset($_GET['artkey']) or $_GET['type'] eq 'art'">
+                            <option value="art" selected>文章</option>
+                            <else/>
+                            <option value="art">文章</option>
+                        </if>
+                        <if condition="isset($_GET['thekey']) or $_GET['type'] eq 'the'">
+                            <option value="the" selected>主题</option>
+                            <else/>
+                            <option value="the">主题</option>
+                        </if>
+                        <if condition="isset($_GET['sitkey']) or $_GET['type'] eq 'sit'">
+                            <option value="sit" selected>站点</option>
+                            <else/>
+                            <option value="sit">站点</option>
+                        </if>
+                    </select>
+                    <input type="submit" value="">
+                </form>
+                <div class="clear"></div>
+            </h1>
+            <section>
+                <div class="tol">
+                    <if condition="$_GET['artkey'] or $_GET['type'] eq 'art'">
+                        <div class="con">
+                            <if condition="!empty($arts)">
+                                <foreach name="arts" item="row">
+                                    <figure>
+                                        <figcaption>
+                                            <h1><a href="__APP__/Article/artinfo/id/<{$row['id']}>"><{$row['title']}></a> </h1>
+                                            <div class="artcon">
+                                                <{$row['content']}>
+                                            </div>
+                                            <p><i class="s-tb"></i><span><{$row['sn']}> </span><i class="clock"></i><time><{:date('m-d H:i',$row['time'])}></time></p>
+                                        </figcaption>
+                                        <{$row['img']}>
+                                        <div class="clear"></div>
+                                    </figure>
+                                </foreach>
+                                <div class="manu"><{$show}></div>
+                                <else/>
+                                <div class="no">没有查到相关文章</div>
+                            </if>
+                        </div>
+                    </if>
+                    <if condition="$_GET['thekey'] or $_GET['type'] eq 'the'">
+                        <div class="thecon">
+                            <if condition="!empty($thes)">
+                                <div class="tip">相近主题如下</div>
+                                <foreach name="thes" item="row">
+                                    <figure>
+                                        <a href="__APP__/Theme/theartall/id/<{$row['id']}>"><img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>"></a>
+                                        <figcaption><a href="__APP__/Theme/theartall/id/<{$row['id']}>"><{$row['name']}></a></figcaption>
+                                    </figure>
+                                </foreach>
+                                <else/>
+                                <div class="tip">没有找到与<span><{$_GET['thekey']}><{$_GET['key']}></span>相近的主题</div>
+                            </if>
+                            <div class="Separate"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </if>
+                    <if condition="$_GET['sitkey'] or $_GET['type'] eq 'sit'">
+                        <div class="thecon">
+                            <if condition="!empty($sits)">
+                                <div class="tip">相近主题如下</div>
+                                <foreach name="sits" item="row">
+                                    <figure>
+                                        <a href="__APP__/Site/siteartall/id/<{$row['id']}>"><img src="__PUBLIC__/Uploads/sitelogo/<{$row['img']}>"></a>
+                                        <figcaption><a href="__APP__/Site/siteartall/id/<{$row['id']}>"><{$row['name']}></a></figcaption>
+                                    </figure>
+                                </foreach>
+                                <else/>
+                                <div class="tip">没有找到与<span><{$_GET['sitkey']}><{$_GET['key']}></span>相近的站点</div>
+                            </if>
+                            <div class="Separate"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </if>
+                </div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>

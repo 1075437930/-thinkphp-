@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/login.css" rel="stylesheet">
+    <link href="../Public/Css/register.css" rel="stylesheet">
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/register.js"></script>
+    <script>
+        if("<{$_GET['error']}>"){
+            $('.error1').html("<{$_GET['error']}>").show();
+        }
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="container main">
+        <div class="row">
+            <section>
+                <h1>账号信息</h1>
+                <p class="error1"></p>
+                <form action="__URL__/recheck" method="post">
+                    <div class="form-group">
+                        <label class="xi">邮箱</label>
+                        <input type="text" name="email" class="auth" placeholder="比如：******@163.com163">
+                    </div>
+                  <p class="err"><img src="../Public/Images/2017-01-10_002144.png">邮箱格式有误</p>
+                    <div class="form-group">
+                        <label class="by">用户名</label>
+                        <input type="text" name="user" class="auth">
+                    </div>
+                    <p class="err"><img src="../Public/Images/2017-01-10_002144.png">用户名长度需要在7到24个字符间</p>
+                    <div class="form-group">
+                        <label class="xi">密码</label>
+                        <input type="password" name="password" class="auth">
+                    </div>
+                    <p class="err"><img src="../Public/Images/2017-01-10_002144.png">密码需在6到20字符间</p>
+                    <div class="form-group">
+                        <label>重复密码</label>
+                        <input type="password" name="repassword" class="auth">
+                    </div>
+                    <p class="err"><img src="../Public/Images/2017-01-10_002144.png">两次密码不一致</p>
+                    <div class="form-group">
+                        <label class="by">验证码</label>
+                        <input type="text" name="verify" class="auth">
+                        <img src="__URL__/verify" onclick="this.src='__URL__/verify/'+Math.random()">
+                     </div>
+                    <p class="err"><img src="../Public/Images/2017-01-10_002144.png">验证码有误</p>
+                    <div class="form-group">
+                        <input type="submit" value="提交">
+                    </div>
+                </form>
+            </section>
+
+        </div>
+        <include file="Public:footer"/>
+    </div>
+</body>
+</html>

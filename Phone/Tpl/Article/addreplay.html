@@ -1,0 +1,11 @@
+<div class="reps">
+    <if condition="$_SESSION['img'] eq ''">
+        <img src="__PUBLIC__/Images/man.jpg"  >
+        <else/>
+        <img src="__PUBLIC__/Uploads/headport/<{$_SESSION['img']}>">
+    </if>
+    <div class="reps-co">
+        <p><span><{$_SESSION['username']}></span><span>回复了他</span><time><{:date('m-d H:i',time())}></time></p>
+        <p class="comment-con"><{$_POST['content']}></p>
+    </div>
+</div>

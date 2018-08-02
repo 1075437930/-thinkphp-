@@ -1,0 +1,223 @@
+.content{
+    width: 1150px;
+}
+article{
+    width: 74%;
+    float: left;
+}
+aside{
+    width: 25%;
+    float: right;
+}
+.artna li {
+    float: left;
+    margin-left: 24px;
+    width: 58px;
+    text-align: center;
+    height: 29px;
+}
+nav.artna {
+    border-bottom: 1px solid #0AA284;
+    height: 30px;
+    margin-bottom: 12px;
+}
+.artna li a {
+    color: #606060;
+    font-size: 17px;
+}
+article figcaption {
+    float: left;
+    width: 69%;
+    margin-top: 15px;
+    margin-left: 11px;
+}
+article figcaption h1{
+    margin-bottom: 7px;
+}
+article figcaption h1 a{
+    font-size: 20px;
+
+    font-weight: normal;
+
+}
+article figcaption h1 a:hover{
+    color: #0AA284;
+}
+article figcaption h1 a:visited{
+    color: #999999;
+}
+
+article img {
+    float: left;
+    width: 175px;
+    height: 109px;
+    margin-top: 16px;
+    margin-left: 36px;
+}
+article figure {
+    background-color: white;
+    border-bottom: 2px solid #E0E2E4;
+
+}
+.con {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 43px;
+    line-height: 22px;
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 19px;
+}
+.s-tb {
+    background: url("../Images/2017-01-16_223649.png") no-repeat;
+    background-position: 4px 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.clock{
+    background-image: url("../Images/icons-4.png");
+    background-repeat: no-repeat;
+    background-position: -178px -103px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+article img {
+    float: left;
+    width: 175px;
+    height: 109px;
+}
+article figcaption p span {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+article figcaption p time{
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+.con p {
+    font-size: 14px!important;
+    color: #888888!important;
+}
+.con p span{
+    font-size: 14px!important;
+    color: #888888!important;
+}
+.manu{
+    background: white!important;
+}
+.set {
+    background-color: white;
+    margin-top: 10px;
+    border-top: 1px solid #F4F6F8;
+    height: 171px;
+    border: 1px solid #F2F4F6;
+    margin-bottom: 22px;
+}
+section.set img {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+p.account {
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.option a{
+    color: #333333;
+    font-size: 15px;
+}
+.option span {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #D9D9D9;
+}
+.set figure {
+    text-align: center;
+    margin-top: 20px;
+}
+.adver img{
+    width: 100%;
+
+}
+section.adver figure {
+    margin-top: 8px;
+}
+.no div span{
+    float: left;
+}
+.no div p {
+    float: left;
+    width: 93%;
+}
+.no h1 {
+    border-bottom: 1px solid #DDDDDD;
+    width: 90%;
+    margin: 0 auto;
+    height: 43px;
+    line-height: 43px;
+
+}
+.no div {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: 14px;
+}
+.no {
+    background-color: white;
+    color: #333333;
+    height: 195px;
+    margin-top: 32px;
+}
+.no h1{
+    font-size: 15px;
+}
+ul.menu1 li {
+    float: left;
+    list-style: none;
+    margin-right: 3px;
+}
+ul.menu1 li a {
+    font-size: 16px;
+}
+ul.menu1 li a:active{
+    text-decoration: none!important;
+}
+.clear{
+    clear: both;
+}
+ul.menu1 {
+    margin-left: -41px!important;
+    border-bottom:1px solid #0AA284 ;
+}
+.col-md-9 figure .row{
+    border-bottom: 1px solid #DDDDDD;
+}
+.col-xs-7 figcaption h1 a {
+    color: black!important;
+    font-size: 18px;
+}
+
+.col-xs-7 figcaption h1 {
+    line-height: 16px;
+}
+.col-xs-7 figcaption p span{
+    color: #777777;
+    font-size: 13px;
+}
+.col-xs-7 figcaption p time{
+    color: #777777;
+    font-size: 13px;
+}
+.col-xs-5 img{
+    width: 100%;
+    height: 100px;
+    margin-top: 35px;
+}

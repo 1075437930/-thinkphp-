@@ -1,0 +1,60 @@
+<header>
+    <div class="to">
+        <nav class="to-le">
+            <ul>
+                <li><a href="<{:U('Index/index')}>" class="ind" >资讯网</a> </li>
+                <if condition="MODULE_NAME eq 'Article'">
+                    <li><a href="<{:U('Article/index')}>" style="color: #16A085">文章</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Article/index')}>">文章</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Site'">
+                    <li><a href="<{:U('Site/index')}>" style="color: #16A085">站点</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Site/index')}>">站点</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Theme'">
+                    <li><a href="<{:U('Theme/index')}>" style="color: #16A085">主题</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Theme/index')}>" >主题</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Activity'">
+                    <li><a href="<{:U('Activity/index')}>" style="color: #16A085">活动</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Activity/index')}>" >活动</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Course'">
+                    <li><a href="<{:U('Course/index')}>" style="color: #16A085">公开课</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Course/index')}>" >公开课</a> </li>
+                </if>
+            </ul>
+            <form action="<{:U('Search/index')}>" method="get">
+                <input type="text" placeholder="搜索" name="artkey">
+            </form>
+        </nav>
+        <if condition="$_SESSION['user_id'] eq ''">
+            <a href="<{:U('Login/login')}>" class="lo">登录</a>
+            <else/>
+            <div class="to-ri">
+                    <if condition="$_SESSION['img'] eq ''">
+                        <img src="__PUBLIC__/Images/man.jpg" class="head" width="60px" height="40px">
+                        <else/>
+                        <img src="__PUBLIC__/Uploads/headport/<{$_SESSION['img']}>" width="60px" height="40px" alt="" class="head">
+                    </if>
+                    <span><{$_SESSION['username']}></span>
+                    <i class="arrow"></i>
+
+                <ul class="drop-down">
+                    <li><a href="__APP__/Person/myindex/id/<{$_SESSION['user_id']}>/name/<{$_SESSION['username']}>">我的主页</a> </li>
+                    <li><a href="__APP__/Person/mycoll/id/<{$_SESSION['user_id']}>">我的收藏</a></li>
+                    <li><a href="__APP__/Person/settings/id/<{$_SESSION['user_id']}>">个人设置</a></li>
+                    <li><a href="__APP__/Person/message/id/<{$_SESSION['user_id']}>">消息通知</a></li>
+                    <li><a href="<{:U('Login/logout')}>">退出</a></li>
+                </ul>
+            </div>
+        </if>
+        <div class="clear"></div>
+    </div>
+    <div class="backtop"></div>
+</header>

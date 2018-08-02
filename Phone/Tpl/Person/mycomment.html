@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的评论</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/mycomment.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/mycomment.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="container">
+        <article>
+            <h1><span>我的评论</span></h1>
+            <section>
+                <if condition="!empty($comms)">
+                    <foreach name="comms" item="row">
+                            <div class="row">
+                            <div class="comm-le">
+                                <{:date('Y年m月',$row['time'])}>
+                            </div>
+                            <foreach name="row['comm']" item="row2">
+                                <div class="comm-ri">
+                                        <div class="comm-item">
+                                            <p><span>评论了</span><a href="__APP__/Article/artinfo/id/<{$row2['ti']}>"><{$row2['tt']}></a><time><{:date('m-d H:i',$row2['time'])}></time></p>
+                                            <p class="con"><{$row2['content']}></p>
+                                        </div>
+                                </div>
+                            </foreach>
+                            <div class="manu"><{$row['show']}></div>
+                            <div class="clear"></div>
+                            </div>
+                    </foreach>
+                    <else/>
+                    <div class="no">
+                        没有任何评论
+                    </div>
+                </if>
+                <div class="manu"><{$show}></div>
+            </section>
+        </article>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.content{
+    margin-bottom: 60px;
+}
+
+section{
+    background-color: white;
+}
+
+.top img {
+    float: left;
+    width: 226px;
+    height: 109px;
+    margin-top: 20px;
+    margin-left: 49px;
+}
+.top figcaption h1 {
+    line-height: 36px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+.top figcaption p {
+    margin-left: 12px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.top figcaption p span {
+    margin-right: 8px;
+}
+.study div{
+    float: right;
+}
+.study {
+    height: 45px;
+    margin-top: 15px;
+    line-height: 45px;
+}
+section.study a {
+    background: #16A085;
+    color: white;
+    width: 108px;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    border: 1px solid #45B39E;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 7px;
+    float: left;
+}
+section.study a:hover{
+    color: white!important;
+}
+section.study a img {
+    float: left;
+    margin-left: 11px;
+    margin-top: 6px;
+}
+
+section.study button {
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    float: left;
+    margin-top: 7px;
+    height: 29px;
+    width: 70px;
+    margin-left: 12px;
+    margin-right: 21px;
+    line-height: 26px;
+    cursor: pointer;
+}
+section.info {
+    margin-top: 15px;
+}
+section.info h1 {
+    width: 95%;
+    margin: 0 auto;
+    height: 46px;
+    border-bottom: 1px solid #E8E8E8;
+    line-height: 46px;
+    font-weight: 500;
+    font-size: 25px;
+}
+section.info .con {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+section.info .con img{
+    width: 92%;
+}
+section.info .con {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.con {
+    line-height: 33px;
+}
+.tip{
+    position: fixed;
+    left: 50%;
+    top:50%;
+    background-color: #383838;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.bq{
+    background-color:#F2F2F2 ;
+    color: #787878;
+}
+.bq:hover{
+    background-color:#0AA284 ;
+    color: white!important;
+}
+section.recommend {
+    margin-top: 12px!important;
+}
+section.recommend h1 {
+    border-bottom: 1px solid #E3E3E3;
+    height: 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+section.recommend p {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #CCCCCC;
+    font-size: 15px;
+    width: 95%;
+    margin: 0 auto;
+}
+section.recommend p a{
+    color: #16A085;
+}
+section.recommend p span{
+    color: #39465F;
+}
+section.recommend p a:hover{
+    text-decoration: underline;
+}
+.adver figure {
+    height: 155px;
+    margin-bottom: 11px;
+}
+.adver img{
+    width: 100%;
+    height: 100%;
+}
+.interval{
+    height: 20px;
+}

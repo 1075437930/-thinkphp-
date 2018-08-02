@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动列表</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/actilist.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/header.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="container">
+        <article>
+            <section class="search">
+                <form action="<{:U('actilist')}>" method="post">
+                    <div class="form-group">
+                        <label>城市</label>
+                        <select name="city">
+                            <if condition="$_GET['city'] neq 'all' || $_POST['city'] neq 'all'">
+                                <option value="all">所有城市</option>
+                                <foreach name="citys" item="row">
+                                    <if condition="$row['id'] eq $_GET['city']  || $row['id'] eq $_POST['city']">
+                                        <option selected value="<{$row['id']}>"><{$row['name']}></option>
+                                        <else/>
+                                        <option  value="<{$row['id']}>"><{$row['name']}></option>
+                                    </if>
+                                </foreach>
+                                <else/>
+                                <option selected value="all">所有城市</option>
+                                <foreach name="citys" item="row">
+                                        <option  value="<{$row['id']}>"><{$row['name']}></option>
+                                </foreach>
+                            </if>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>类型</label>
+                        <select name="class">
+                            <if condition="$_GET['city'] || $_POST['city']">
+                                <option value="all">所有类型</option>
+                                <foreach name="clas" item="row">
+                                    <if condition="$row['id'] eq $_GET['class']  || $row['id'] eq $_POST['class']">
+                                        <option selected value="<{$row['id']}>"><{$row['name']}></option>
+                                        <else/>
+                                        <option  value="<{$row['id']}>"><{$row['name']}></option>
+                                    </if>
+                                </foreach>
+                                <else/>
+                                <option selected value="all">所有类型</option>
+                                <foreach name="clas" item="row">
+                                    <option  value="<{$row['id']}>"><{$row['name']}></option>
+                                </foreach>
+                            </if>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>日期范围</label>
+                        <select name="time">
+                            <if condition="$_GET['time'] || $_POST['time']">
+                                <if condition="$_GET['time'] eq 'underway' || $_POST['time'] eq 'underway'">
+                                    <option selected value="underway">正在进行</option>
+                                    <else/>
+                                    <option  value="underway">正在进行</option>
+                                </if>
+                                <if condition="$_GET['time'] eq '3day' || $_POST['time'] eq '3day'">
+                                    <option selected value="3day">未来三天</option>
+                                    <else/>
+                                    <option  value="3day">未来三天</option>
+                                </if>
+                                <if condition="$_GET['time'] eq '1week' || $_POST['time'] eq '1week'">
+                                    <option selected value="1week">未来一周</option>
+                                    <else/>
+                                    <option  value="1week">未来一周</option>
+                                </if>
+                                <if condition="$_GET['time'] eq '1mon' || $_POST['time'] eq '1mon'">
+                                    <option selected value="1mon">未来一月</option>
+                                    <else/>
+                                    <option  value="1mon">未来一月</option>
+                                </if>
+                                <if condition="$_GET['time'] eq '3mon' || $_POST['time'] eq '3mon'">
+                                    <option selected value="3mon">未来三月</option>
+                                    <else/>
+                                    <option  value="3mon">未来三月</option>
+                                </if>
+                                <if condition="$_GET['time'] eq 'over'|| $_POST['time'] eq 'over'">
+                                    <option selected value="over">已经结束</option>
+                                    <else/>
+                                    <option  value="over">已经结束</option>
+                                </if>
+                                <else/>
+                                <option value="underway">正在进行</option>
+                                <option value="3day">未来三天</option>
+                                <option value="1week">未来一周</option>
+                                <option value="1mon">未来一月</option>
+                                <option selected value="3mon">未来三月</option>
+                                <option value="over">已经结束</option>
+                            </if>
+                        </select>
+                    </div>
+                    <input type="submit" value="搜索">
+                    <div class="clear"></div>
+                </form>
+            </section>
+            <section class="list">
+                <if condition="!empty($actis)">
+                    <foreach name="actis" item="row">
+                        <div class="con">
+                            <div class="le">
+                                <h2><a href="__APP__/Activity/activinfo/id/<{$row['id']}>"><{$row['title']}></a> </h2>
+                                <p><span class="dd">地点:</span><span><{$row['cn']}></span><span>-</span><span><{$row['info']}></span></p>
+                                <p class="tw"><span class="dd">时间:</span><span><{:date('m-d H:i',$row['start'])}></span><span>~</span><span><{:date('m-d H:i',$row['end'])}></span></p>
+                            </div>
+                            <if condition="time() lt $row['start']">
+                                <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" class="ri">报名中</a>
+                                <else/>
+                                <if condition="time() egt $row['start'] && time() lt $row['end']">
+                                    <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #FAA732" class="ri">进行中</a>
+                                    <else/>
+                                    <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #BBBBBB" class="ri">已结束</a>
+                                </if>
+                            </if>
+                            <div class="clear"></div>
+                        </div>
+                    </foreach>
+                    <else/>
+                    <div class="no">
+                        没有更多活动了哦
+                    </div>
+                </if>
+            </section>
+        </article>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

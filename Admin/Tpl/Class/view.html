@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看分类</title>
+    <link href="../Public/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <style>
+        .shu{
+            font-size: 15px;
+        }
+        td {
+            vertical-align: middle!important;
+        }
+    </style>
+</head>
+<body>
+    <table class="table table table-striped table-bordered table-hover table-condensed">
+        <tr>
+            <th class="text-center">
+                分类
+            </th>
+            <th class="text-center">
+                修改
+            </th>
+            <th class="text-center">
+                删除
+            </th>
+        </tr>
+        <foreach name="rows" item="row">
+            <tr>
+                <td class="shu"><{$row['tree']}></td>
+                <td class="text-center"><a href="__URL__/edit/id/<{$row['id']}>/pid/<{$row['pid']}>"> <span class="glyphicon glyphicon-wrench"></span></a> </td>
+                <td class="text-center"><a href="__URL__/delete/id/<{$row['id']}>"> <span class="glyphicon glyphicon-remove-sign"></span></a></td>
+            </tr>
+        </foreach>
+        <tr>
+            <td colspan="3" class="manu"><{$show}></td>
+        </tr>
+    </table>
+</body>
+</html>

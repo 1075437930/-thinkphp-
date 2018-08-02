@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动首页</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/actiindex.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script>
+        var city="<{$_GET['city']}>";
+    </script>
+    <script src="../Public/Js/actiindex.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <h1 class="toh">
+            <div class="selectcity">
+                <span class="actip">活动</span>
+                <div class="drop">
+                    <span>
+                        <if condition="isset($_GET['name'])">
+                            <{$_GET['name']}>
+                            <else/>
+                            北京
+                        </if>
+                    </span><i class="tb"></i>
+                    <div class="dropdown">
+                        <div class="close">X</div>
+                        <foreach name="citys" item="row">
+                            <a href="__APP__/Activity/index/city/<{$row['id']}>/name/<{$row['name']}>"><{$row['name']}></a>
+                        </foreach>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="myacti">
+                <a href="__APP__/Activity/myacti">我的活动</a>
+            </div>
+            <div class="clear"></div>
+        </h1>
+        <article class="acmain">
+            <section class="contain">
+                <aside>
+                    <section class="citys">
+                        <h2>城市</h2>
+                        <div class="city-con">
+                        <foreach name="citys" item="row">
+                            <if condition="isset($_GET['city'])">
+                                <if condition="$row['id'] eq $_GET['city']">
+                                    <a href="__APP__/Activity/actilist/city/<{$row['id']}>" style="background-color: #0AA284;color: white" uid="<{$row['id']}>"><{$row['name']}></a>
+                                    <else/>
+                                    <a href="__APP__/Activity/actilist/city/<{$row['id']}>" uid="<{$row['id']}>"><{$row['name']}></a>
+                                </if>
+                                <else/>
+                                <if condition="$row['id'] eq $actis[0]['ci']">
+                                    <a href="__APP__/Activity/actilist/city/<{$row['id']}>" style="background-color: #0AA284;color: white" uid="<{$row['id']}>"><{$row['name']}></a>
+                                    <else/>
+                                    <a href="__APP__/Activity/actilist/city/<{$row['id']}>" uid="<{$row['id']}>"><{$row['name']}></a>
+                                </if>
+                            </if>
+                        </foreach>
+                         <a href="__APP__/Activity/actilist/city/all">更多</a>
+                        </div>
+                        <div class="separate"></div>
+                    </section>
+                    <section class="citys times">
+                        <h2>时间</h2>
+                        <div class="times-con">
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/time/underway/city/<{$_GET['city']}>">正在进行</a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/time/underway/city/1">正在进行</a>
+                            </if>
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/time/3day/city/<{$_GET['city']}>">未来三天</a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/time/3day/city/1">未来三天</a>
+                            </if>
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/time/1week/city/<{$_GET['city']}>">未来一周</a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/time/1week/city/1">未来一周</a>
+                            </if>
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/time/1mon/city/<{$_GET['city']}>">未来一月</a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/time/1mon/city/1">未来一月</a>
+                            </if>
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/time/3mon/city/<{$_GET['city']}>">未来三月</a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/time/3mon/city/1">未来三月</a>
+                            </if>
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/time/over/city/<{$_GET['city']}>">已经结束</a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/time/over/city/1">已经结束</a>
+                            </if>
+                        </div>
+                        <div class="separate"></div>
+                    </section>
+                    <section class="citys times">
+                    <h2>类型</h2>
+                    <div class="times-con">
+                        <foreach name="clas" item="row">
+                            <if condition="isset($_GET['city'])">
+                                <a href="__APP__/Activity/actilist/class/<{$row['id']}>/city/<{$_GET['city']}>"><{$row['name']}></a>
+                                <else/>
+                                <a href="__APP__/Activity/actilist/class/<{$row['id']}>/city/1"><{$row['name']}></a>
+                            </if>
+                        </foreach>
+                    </div>
+                    <div class="separate"></div>
+                   </section>
+                    <section class="citys brands">
+                        <h2>品牌</h2>
+                        <div class="brands-con">
+                            <foreach name="brands" item="row">
+                                <figure>
+                                <a href="__APP__/Activity/brandall/id/<{$row['id']}>"><img src="__PUBLIC__/Uploads/brand/<{$row['img']}>"></a>
+                                </figure>
+                            </foreach>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="separate"></div>
+                    </section>
+                </aside>
+                <article>
+                    <section class="hot">
+                        <figure>
+                            <div class="x">
+                                <foreach name="advers" item="row">
+                                         <a href="<{$row['link']}>" target="_blank"><img src="__PUBLIC__/Uploads/adverimg/<{$row['img']}>"/></a>
+                                </foreach>
+                            </div>
+                            <ul class="page">
+
+                            </ul>
+                            <div class="btn btn-le">&lt;</div>
+                            <div class="btn btn-ri">&gt;</div>
+                        </figure>
+                        <div class="word">
+                            <h2>热门活动</h2>
+                            <foreach name="hots" item="row">
+                             <p><a href="__APP__/Activity/activinfo/id/<{$row['id']}>"><span>[<{$row['cn']}>]</span><span><{$row['title']}></span></a> </p>
+                            </foreach>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    <section class="nearfuture">
+                            <h1><span>
+                                <if condition="$count eq 0">
+                                     全国
+                                     <else/>
+                                     <{$actis[0]['cn']}>
+                                </if>
+                                </span>
+                                <span class="secon">近期活动</span>
+                                <a href="__APP__/Activity/actilist/city/all">更多</a>
+                            </h1>
+                            <foreach name="actis" item="row">
+                                <div class="con">
+                                    <div class="le">
+                                        <h2><a href="__APP__/Activity/activinfo/id/<{$row['id']}>"><{$row['title']}></a> </h2>
+                                        <p><span class="dd">地点:</span><span><{$row['cn']}></span><span>-</span><span><{$row['info']}></span></p>
+                                        <p class="tw"><span class="dd">时间:</span><span><{:date('m-d H:i',$row['start'])}></span><span>~</span><span><{:date('m-d H:i',$row['end'])}></span></p>
+                                    </div>
+                                    <if condition="time() lt $row['start']">
+                                        <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" class="ri">报名中</a>
+                                        <else/>
+                                        <if condition="time() egt $row['start'] && time() lt $row['end']">
+                                            <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #FAA732" class="ri">进行中</a>
+                                            <else/>
+                                            <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #BBBBBB" class="ri">已结束</a>
+                                        </if>
+                                    </if>
+                                    <div class="clear"></div>
+                                </div>
+                            </foreach>
+                            <div class="inter"></div>
+                    </section>
+                </article>
+                <div class="clear"></div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+<?php
+    htmlspecialchars_decode('//');

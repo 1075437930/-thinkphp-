@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动首页</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/actiindex.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all"/>
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script>
+        var city = "<{$_GET['city']}>";
+    </script>
+    <script src="../Public/Js/actiindex.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="container">
+    <h1>
+        <div class="selectcity">
+            <div class="drop">
+                    <span>
+                        <if condition="isset($_GET['name'])">
+                            <{$_GET['name']}>
+                            <else/>
+                            北京
+                        </if>
+                    </span><i class="tb"></i>
+                <div class="dropdown">
+                    <div class="close">X</div>
+                    <foreach name="citys" item="row">
+                        <a href="__APP__/Activity/index/city/<{$row['id']}>/name/<{$row['name']}>"><{$row['name']}></a>
+                    </foreach>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="myacti">
+            <a href="__APP__/Activity/myacti">我的活动</a>
+        </div>
+        <div class="clear"></div>
+    </h1>
+    <section class="nearfuture">
+        <h1><span>
+                                <if condition="$count eq 0">
+                                    全国
+                                    <else/>
+                                    <{$actis[0]['cn']}>
+                                </if>
+                                </span>
+            <span class="secon">近期活动</span>
+            <a href="__APP__/Activity/actilist/city/all">更多</a>
+        </h1>
+        <foreach name="actis" item="row">
+            <div class="con">
+                <div class="row">
+                <div class="col-xs-9">
+                <div class="le">
+                    <h2><a href="__APP__/Activity/activinfo/id/<{$row['id']}>"><{$row['title']}></a></h2>
+                    <p><span class="dd">地点:</span><span><{$row['cn']}></span><span>-</span><span><{$row['info']}></span>
+                    </p>
+                    <p class="tw"><span
+                            class="dd">时间:</span><span><{:date('m-d H:i',$row['start'])}></span><span>~</span><span><{:date('m-d H:i',$row['end'])}></span>
+                    </p>
+                </div>
+                </div>
+                <div class="col-xs-3">
+                    <if condition="time() lt $row['start']">
+                    <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" class="ri">报名中</a>
+                    <else/>
+                    <if condition="time() egt $row['start'] && time() lt $row['end']">
+                        <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #FAA732"
+                           class="ri">进行中</a>
+                        <else/>
+                        <a href="__APP__/Activity/activinfo/id/<{$row['id']}>" style="background-color: #BBBBBB"
+                           class="ri">已结束</a>
+                    </if>
+                    </if>
+                </div>
+                </div>
+            </div>
+        </foreach>
+        <div class="inter"></div>
+    </section>
+    <include file="Public:footer"/>
+</div>
+</body>
+</html>

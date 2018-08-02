@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌下的课程</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/brall.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script src="../Public/Js/header.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="container">
+    <div class="top">
+        <figure>
+            <img src="__PUBLIC__/Uploads/brand/<{$brand['img']}>">
+            <figcaption>
+                <{$brand['name']}>
+            </figcaption>
+        </figure>
+        <a href="__APP__/Course/index" class="tz">更多课程</a>
+        <div class="clear"></div>
+    </div>
+        <h1><span>课程列表</span></h1>
+        <section class="con">
+            <foreach name="rows" item="row">
+                <figure>
+                    <a href="__APP__/Course/courinfo/id/<{$row['id']}>">
+                    <img src="__PUBLIC__/Uploads/courimg/<{$row['img']}>">
+                    <figcaption><{$row['title']}></figcaption>
+                    </a>
+                </figure>
+            </foreach>
+            <div class="clear"></div>
+        </section>
+        <div class="manu"><{$show}></div>
+    </div>
+</body>
+</html>

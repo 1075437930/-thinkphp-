@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人设置</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/settings.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function(){
+            $('.info ul li a').hover(function(){
+                $(this).css({'color':'#0AA284'})
+            },function(){
+                $(this).css({'color':'#606060'})
+            });
+
+            if(!"<{$_GET['change']}>"){
+                $('.dyli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.dyli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+
+                $('.typ').click(function(){
+                    $('.upload input[type=file]').click();
+                })
+
+                $('.upload input[type=file]').change(function(){
+                    $('.typ input[type=text]').val($(this).val());
+                    if($(this).val()==''){
+                        $('.typ input[type=text]').val('未选择任何图片')
+                    }
+                });
+
+                $('.er input[type=submit]').click(function(){
+                    if($('.upload input[type=file]').val()==''){
+                        $('.upload .error').css({'display':'block'});
+                        return false;
+
+                    }
+                })
+
+                $('.upload .form-group.er input[type=button]').click(function(){
+                    $('.upload').hide();
+                    $('.modal').hide();
+                })
+
+                $('.info-con figure').click(function(){
+                    $('.upload').show();
+                    $('.modal').show();
+                })
+            }
+
+            if("<{$_GET['change']}>"=="modifymailbox"){
+                $('.theli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.theli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+
+            }
+            if("<{$_GET['change']}>"=='modifypassword'){
+                $('.collli').css({'border-bottom':'1px solid #0AA284'}).find('a').css({'color':'#0AA284'})
+                $('.collli').find('a').hover(function(){
+                    $(this).css({'color':'#0AA284'})
+                },function(){
+                    $(this).css({'color':'#0AA284'})
+                });
+            }
+        })
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <article>
+            <if condition="!isset($_GET['change'])">
+                 <h1>账号信息</h1>
+            </if>
+            <if condition="$_GET['change'] eq 'modifymailbox'">
+                <h1>修改邮箱</h1>
+            </if>
+            <if condition="$_GET['change'] eq 'modifypassword'">
+                <h1>修改密码</h1>
+            </if>
+            <section  class="info">
+                <ul>
+                    <li class="dyli"><a href="__APP__/Person/settings/id/<{$_GET['id']}>">账号信息</a> </li>
+                    <li class="theli"><a href="__APP__/Person/settings/id/<{$_GET['id']}>/change/modifymailbox">修改邮箱</a> </li>
+                    <li class="collli"><a href="__APP__/Person/settings/id/<{$_GET['id']}>/change/modifypassword">修改密码</a> </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="info-con">
+                    <if condition="!isset($_GET['change'])">
+                        <figure>
+                            <if condition="!empty($user['img'])">
+                                <img src="__PUBLIC__/Uploads/headport/<{$_SESSION['img']}>"/>
+                                <else/>
+                                <img src="/kt/Public/Images/man.jpg"/>
+                            </if>
+                            <figcaption></figcaption>
+                            <div class="font">上传头像</div>
+                        </figure>
+                        <if condition="$tip eq 'nouser'">
+                            <div class="uploaderror">用户名不能为空</div>
+                        </if>
+                        <if condition="$tip eq 'success'">
+                            <div class="success">更新成功</div>
+                        </if>
+                        <if condition="$tip eq 'uploaderror'">
+                            <div class="uploaderror"><{$error}></div>
+                        </if>
+                        <if condition="$tip eq 'uploadsuccess'">
+                            <div class="uploadsuccess">上传成功</div>
+                        </if>
+                        <p><span>邮箱:</span><span><{$user['email']}></span></p>
+                        <form action="__URL__/settings/id/<{$_GET['id']}>" method="post">
+                            <div class="form-group">
+                                <label>用户名:</label>
+                                <input type="text" name="user" value="<{$_SESSION['username']}>">
+                            </div>
+                            <p><span>注册时间</span><{:date('Y-m-d H:i',$user['registrtime'])}></p>
+                            <input type="hidden" value="<{$_GET['id']}>" name="id">
+                            <div class="form-group">
+                            <input type="submit" value="提交">
+                            </div>
+                        </form>
+                        <div class="upload">
+                            <h2>上传头像</h2>
+                            <form action="__URL__/settings/id/<{$_GET['id']}>" method="post" enctype="multipart/form-data">
+                                <div class="form-group fi">
+                                    <input type="file" name="img">
+                                    <div class="typ">
+                                        <div class="btn">选择本地图片</div>
+                                        <input type="text" disabled>
+                                    </div>
+                                </div>
+                                <input type="hidden" value="<{$_GET['id']}>" name="id">
+                                <div class="error">请选择上传文件</div>
+                                <div class="form-group er">
+                                    <input type="submit" value="上传">
+                                    <input type="button" value="取消">
+                                    <div class="clear"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal"></div>
+                    </if>
+                    <if condition="$_GET['change'] eq 'modifymailbox'">
+                        <if condition="$_GET['tip'] eq 'noemail'">
+                            <div class="uploaderror">邮箱不能为空</div>
+                        </if>
+                        <if condition="$_GET['tip'] eq 'emailerror'">
+                            <div class="uploaderror">邮箱格式不正确</div>
+                        </if>
+                        <if condition="$_GET['tip'] eq 'success'">
+                            <div class="uploadsuccess">修改成功</div>
+                        </if>
+                        <form action="<{:U('modifymail')}>" method="post" class="modifymailbox">
+                            <div class="form-group first">
+                                <label>当前邮箱:</label>
+                                <span><{$user['email']}></span>
+                            </div>
+                            <div class="form-group">
+                                <label>新邮箱:</label>
+                                <input type="text" name="email">
+                            </div>
+                            <input type="hidden" value="<{$_SESSION['user_id']}>" name="id">
+                            <div class="form-group">
+                                <input type="submit" value="提交">
+                            </div>
+                        </form>
+                    </if>
+                    <if condition="$_GET['change'] eq 'modifypassword'">
+                        <if condition="$_GET['tip'] eq 'error'">
+                            <div class="uploaderror">当前密码不正确</div>
+                        </if>
+                        <if condition="$_GET['tip'] eq 'errorlength'">
+                            <div class="uploaderror">新密码必须在7~10个字符之间</div>
+                        </if>
+                        <if condition="$_GET['tip'] eq 'nosame'">
+                            <div class="uploaderror">两次密码不一致</div>
+                        </if>
+                        <if condition="$_GET['tip'] eq 'success'">
+                            <div class="uploadsuccess">密码修改成功</div>
+                        </if>
+                        <form action="<{:U('modifypassword')}>" method="post">
+                            <div class="form-group">
+                                <label>当前密码</label>
+                                <input type="password" name="password">
+                            </div>
+                            <div class="form-group new">
+                                <label class="new">新密码</label>
+                                <input type="password" name="newpassword">
+                            </div>
+                            <input type="hidden" name="id" value="<{$_SESSION['user_id']}>">
+                            <div class="form-group">
+                                <label>确认密码</label>
+                                <input type="password" name="repassword">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="提交">
+                            </div>
+                        </form>
+                    </if>
+                </div>
+                <div class="Separate"></div>
+            </section>
+        </article>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

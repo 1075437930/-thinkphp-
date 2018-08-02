@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的收藏</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/mycoll.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+</head>
+<body>
+<include file="Public:header"/>
+<div class="content">
+    <div class="collcon">
+        <h1><span>我的收藏</span></h1>
+        <if condition="!empty($colls)">
+            <foreach name="colls" item="row">
+                <div class="piece">
+                    <div class="the-le">
+                        <a href="__APP__/Article/artinfo/id/<{$row['ai']}>"><span class="tit"><{$row['an']}></span><{$row['content']}></a>
+                        <div class="clear"></div>
+                    </div>
+                    <span class="the-ri"><{:date('m-d H:i',$row['tt'])}></span>
+                    <div class="clear"></div>
+                </div>
+            </foreach>
+            <div class="manu"><{$show}></div>
+            <else/>
+            <div class="no">
+                没有收藏的文章
+            </div>
+        </if>
+    </div>
+</div>
+</body>
+</html>

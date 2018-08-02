@@ -1,0 +1,73 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="__APP__/Index/index"><strong class="text-black">资讯网</strong></a>
+        </div>
+        <li class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <if condition="MODULE_NAME eq 'Article'">
+                    <li class="active"><a href="<{:U('Article/index')}>" style="color: #16A085">文章</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Article/index')}>">文章</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Site'">
+                    <li><a href="<{:U('Site/index')}>" style="color: #16A085">站点</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Site/index')}>">站点</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Theme'">
+                    <li><a href="<{:U('Theme/index')}>" style="color: #16A085">主题</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Theme/index')}>" >主题</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Activity'">
+                    <li><a href="<{:U('Activity/index')}>" style="color: #16A085">活动</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Activity/index')}>" >活动</a> </li>
+                </if>
+                <if condition="MODULE_NAME eq 'Course'">
+                    <li><a href="<{:U('Course/index')}>" style="color: #16A085">公开课</a> </li>
+                    <else/>
+                    <li><a href="<{:U('Course/index')}>" >公开课</a> </li>
+                </if>
+            </ul>
+            <form class="navbar-form navbar-left form-inline" action="<{:U('Search/index')}>" method="get">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索" name="artkey">
+                </div>
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <if condition="!isset($_SESSION['user_id'])">
+                    <a href="__APP__/Login/login">登录</a>
+                    <else/>
+                    <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
+                    <if condition="$_SESSION['img'] eq ''">
+                        <img src="__PUBLIC__/Images/man.jpg" class="head" width="60px" height="40px">
+                        <else/>
+                        <img src="__PUBLIC__/Uploads/headport/<{$_SESSION['img']}>" width="60px" height="40px" alt="" class="head">
+                    </if>
+                        <span><{$_SESSION['username']}></span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="__APP__/Person/myindex/id/<{$_SESSION['user_id']}>/name/<{$_SESSION['username']}>">我的主页</a> </li>
+                        <li><a href="__APP__/Person/mycoll/id/<{$_SESSION['user_id']}>">我的收藏</a></li>
+                        <li><a href="__APP__/Person/settings/id/<{$_SESSION['user_id']}>">个人设置</a></li>
+                        <li><a href="__APP__/Person/message/id/<{$_SESSION['user_id']}>">消息通知</a></li>
+                        <li><a href="<{:U('Login/logout')}>">退出</a></li>
+                    </ul>
+                 </if>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="backtop"></div>

@@ -1,0 +1,323 @@
+body{
+    overflow-y: hidden;
+}
+.content{
+    width: 100%;
+    margin: 53px auto;
+}
+article{
+    width: 80%;
+    float: left;
+    overflow-y: scroll;
+    height: 677px;
+}
+aside{
+    width: 20%;
+    float: left;
+    overflow-y: scroll;
+    height: 677px;
+}
+.search input[type=text]:focus{
+    border: 1px solid #0AA284;
+}
+.search input[type=text] {
+    width: 92%;
+    border: 1px solid #CCCCCC;
+    height: 27px;
+    margin-left: 7px;
+    border-radius: 7px;
+    text-indent: 8px;
+}
+section.search {
+    margin-top: 2px;
+}
+.drop {
+    margin-top: 12px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.drop:hover{
+    background-color: #EEEEEE;
+}
+.drop i {
+    background: url("../Images/2017-01-18_142753.png") no-repeat;
+    background-position: 7px 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.drop span {
+    font-size: 13px;
+}
+.sites ul li img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+.sites ul li span {
+    font-size: 13px;
+    color: #555555;
+    float: left;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.sites ul li {
+    height: 25px;
+    margin-top: 3px;
+}
+.sites ul li:hover{
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+.arr{
+    width: 10px!important;
+}
+ul.dd {
+    margin-left: 14px;
+    display: none;
+}
+ul.dt{
+    display: none;
+}
+.my {
+    background: url("../Images/2017-01-18_160228.png") no-repeat!important;
+    background-position: 7px 3px!important;
+}
+.mysite .drop{
+    margin-top: 0;
+}
+.dropdown li img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+.dropdown li span{
+    font-size: 13px;
+    color: #555555;
+    float: left;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.dropdown li{
+    height: 25px;
+    margin-top: 3px;
+}
+.dropdown li:hover{
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+article figure {
+    float: left;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 306px;
+    height: 71px;
+}
+article figure img {
+    float: left;
+    width: 51px;
+    margin-top: 10px;
+    margin-left: 12px;
+    height: 51px;
+}
+article figure figcaption {
+    float: left;
+    margin-left: 8px;
+    width: 224px;
+    margin-top: 20px;
+}
+article figure figcaption a {
+    font-size: 15px;
+    color: #333333;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+article figure figcaption a:hover{
+    text-decoration: underline;
+}
+article figure figcaption button{
+    float: right;
+}
+.none{
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 306px;
+    height: 71px;
+    color: #468847;
+    text-align: center;
+    line-height: 71px;
+}
+.the-le {
+    float: left;
+    color: #777777;
+    font-size: 15px;
+    overflow: hidden;
+    width: 902px;
+    height: 100%;
+}
+.the-ri {
+    float: right;
+    color: #777777;
+    font-size: 13px;
+    margin-right: 16px;
+}
+.the-le span{
+    float: left;
+}
+.the-le a:hover{
+    color: #777777!important;
+}
+.the-le a{
+    color: #777777;
+}
+.piece:hover{
+    background-color: #EEEEEE;
+}
+.piece {
+    clear: both;
+    width: 98%;
+    height: 45px;
+    margin: 0 auto;
+    border-bottom: 1px solid #E6E6E6;
+    line-height: 45px;
+    cursor: pointer;
+}
+article section h1 {
+    width: 98%;
+    margin: 0 auto;
+    color: #555555;
+    margin-top: 27px;
+    font-size: 24px;
+}
+.litip {
+    border-bottom: 1px solid #DDDDDD;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 16px;
+    height: 35px;
+}
+p.litip span {
+    background: white;
+    height: 35px;
+    display: inline-block;
+    width: 79px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    border-bottom: 0;
+    margin-top: 0px;
+    float: left;
+    color: #555555;
+    font-size: 14px;
+}
+span.tit {
+    font-weight: bold;
+    color: #333333;
+    font-size: 15px;
+    margin-right: 12px;
+}
+.subed{
+    width: 82px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+
+}
+.nosub {
+    width: 82px;
+    height: 30px;
+    background-color: #0AA284;
+    color: white;
+    border: 1px solid #3BB59D;
+    cursor: pointer;
+
+}
+.jia button {
+    margin-top: 4px;
+}
+figure a:hover{
+    color: #0AA284;
+    text-decoration: underline;
+}
+article ul {
+    margin: 0 auto;
+    margin-top: 39px;
+    width: 90%;
+}
+.the-con figure a:hover{
+    color: #0AA284;
+}
+article ul li {
+    float: left;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #333333;
+    font-size: 14px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.the-con{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.the-con figure {
+    float: left;
+    background-color: white;
+    margin-left: 15px;
+    width: 299px;
+    height: 71px;
+    margin-bottom: 10px;
+}
+.the-con figure img{
+    float: left;
+    width: 51px;
+    margin-top: 10px;
+    margin-left: 12px;
+    height: 51px;
+}
+.the-con figure figcaption {
+    float: left;
+    margin-left: 8px;
+    width: 206px;
+    margin-top: 20px;
+}
+.the-con figure figcaption a{
+    font-size: 15px;
+    color: #333333;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tip {
+    width: 92px;
+    height: 37px;
+    background-color: #595959;
+    position: fixed;
+    color: white;
+    left: 50%;
+    top: 50%;
+    line-height: 37px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}

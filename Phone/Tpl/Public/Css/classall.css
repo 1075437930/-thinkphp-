@@ -1,0 +1,89 @@
+.content {
+    background-color: white;
+    margin-top: 27px;
+    border: 1px solid #E8EAEC;
+}
+.top{
+    width: 100%;
+    height: 230px;
+    background-color: #006B4C;
+    border-top: 1px solid #006B4C;
+}
+.top figure {
+
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 100px;
+}
+.top figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: inherit;
+}
+.top figcaption {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    margin-left: 8px;
+    text-align: center;
+    margin-top: 3px;
+}
+.tz {
+    float: right;
+    border: 1px solid white;
+    color: white;
+    width: 81px;
+    height: 36px;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 37px;
+    margin-top: -125px;
+}
+.tz:hover{
+    border: 2px solid white;
+    color: white!important;
+}
+.content h1 {
+    border-bottom: 1px solid #0AA284;
+    height: 45px;
+    line-height: 45px;
+}
+.content h1 span{
+    margin-left: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+    border-bottom: 1px solid #0AA284;
+    float: left;
+    color: #0AA284;
+    margin-top: 4px!important;
+}
+
+.con{
+    width: 97%;
+    margin: 0 auto;
+}
+section.con figure img {
+    width: 100%;
+    height: 120px;
+}
+section.con figure figcaption{
+    color: #333333;
+    font-size: 15px;
+}
+section.con figure figcaption:hover{
+    color: #0AA284;
+    text-decoration: underline;
+}
+.con figure {
+    margin: 10px 10px;
+}
+.manu {
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+    border-top: 1px solid #ededed;
+    margin-top: 34px!important;
+}

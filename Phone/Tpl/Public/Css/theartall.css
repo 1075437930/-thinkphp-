@@ -1,0 +1,189 @@
+.content{
+    margin-bottom: 200px;
+}
+article {
+    background-color: white;
+}
+aside{
+    background-color: white;
+}
+.site-top{
+    width: 95%;
+    margin: 15px auto;
+}
+.site-top img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #E5E5E5;
+}
+.ingo {
+    margin-left: 10px;
+}
+h1.na {
+    font-size: 17px;
+    color: #555555;
+
+}
+.nosub {
+    width: 82px;
+    height: 30px;
+    background-color: #0AA284;
+    color: white;
+    border: 1px solid #3BB59D;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.subed{
+    width: 82px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.ingo p {
+    height: 37px;
+    line-height: 35px;
+}
+.ingo p span {
+    margin-right: 14px;
+}
+.ingo p a {
+    font-size: 15px;
+    color: cornflowerblue;
+}
+.arts{
+    width: 95%;
+    margin: 15px auto;
+    border-left: 3px solid #C3CCDF;
+}
+
+
+section.arts figure {
+    border: 1px solid #C4CDE0;
+    padding: 8px;
+    margin-left: 9px;
+    position: relative;
+    margin-top: 12px;
+}
+.arr {
+    position: absolute;
+    left: -8px;
+    top: 17px;
+}
+.poin {
+    padding-left: 8px;
+    background: url("../Images/icons-4.png") no-repeat;
+    background-position: -53px -31px;
+    position: absolute;
+    left: -15px;
+    padding-top: 15px;
+    top: 22px;
+}
+section.arts figure h2 {
+    font-size: 13px;
+}
+section.arts figure h2 a{
+    color: #0AA284;
+}
+section.arts figure h2 a:hover{
+    text-decoration: underline;
+}
+section.arts figure .con {
+    font-size: 7px;
+    color: #777;
+    margin-top: 6px;
+    height: 53px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a.inside {
+    font-weight: bold;
+    color: #0AA284;
+    font-size: 13px;
+}
+a.inside:hover{
+    text-decoration: underline;
+}
+.arts figure figcaption {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+img.pic {
+    margin-top: 34px;
+    width: 100%;
+    height: 90px;
+}
+
+
+.clock {
+    background-image: url("../Images/icons-4.png");
+    background-repeat: no-repeat;
+    background-position: -178px -103px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+figcaption time{
+    color: #77777B;
+}
+aside h1 {
+    border-bottom: 1px solid #DDDDDD;
+    height: 36px;
+    width: 97%;
+    margin: 0 auto;
+    line-height: 36px;
+    text-indent: 3px;
+}
+.about {
+    width: 97%;
+    margin: 0 auto;
+    border-bottom: 1px solid #DDDDDD;
+    height: 43px;
+    line-height: 43px;
+    cursor: pointer;
+}
+.about:hover{
+    background-color: #F3F3F3;
+}
+.about img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 27px;
+    border: 1px solid #E0E0E0;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+.about span{
+    float: left;
+}
+.manu {
+    padding: 3px;
+    margin: 3px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.empt {
+    height: 209px;
+    text-align: center;
+    line-height: 209px;
+    font-size: 19px;
+    border: 1px solid #C4CDE0;
+    width: 95%;
+    margin: 0 auto;
+    font-weight: 100;
+}
+.empt img {
+    float: left;
+    width: 50px;
+    margin-top: 78px;
+    margin-left: 193px;
+}
+.empt span{
+    float: left;
+}

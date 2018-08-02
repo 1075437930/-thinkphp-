@@ -1,0 +1,159 @@
+.content{
+    width: 100%;
+}
+.tit {
+    color: #0AA284;
+    font-size: 27px;
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+input[name='key'] {
+    border: 1px solid #CCCCCC;
+    height: 28px;
+    width: 100%;
+    line-height: 28px;
+}
+input[name='key']:focus{
+    border: 1px solid #0AA284;
+}
+select[name='type'] {
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    font-size: 12px;
+    float: left;
+}
+.tit input[type='submit'] {
+    background: url("../Images/2017-01-29_164237.png") no-repeat;
+    width: 100%;
+    height: 28px;
+    background-position: -14px -1px;
+    cursor: pointer;
+}
+.sform{
+    margin-top: 10px;
+}
+article section{
+    background-color: #F4F6F8;
+    border-top: 1px solid #E8E8E8;
+    margin-top: 24px;
+}
+.tol{
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.con{
+    background-color: white;
+}
+.con figure{
+    background-color: white;
+    border-bottom: 2px solid #E0E2E4;
+}
+.con figure figcaption {
+    margin-top: 15px;
+    margin-left: 11px;
+}
+.con figure img {
+    width: 100%;
+    height: 109px;
+    margin-top: 62px;
+}
+.con figure figcaption h1 {
+    margin-bottom: 7px;
+    font-size: 19px;
+}
+.con figure figcaption h1 a {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.artcon{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 85px;
+    line-height: 22px;
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 19px;
+}
+.s-tb {
+    background: url("../Images/2017-01-16_223649.png") no-repeat;
+    background-position: 4px 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.con figcaption p span {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+.clock {
+    background-image: url("../Images/icons-4.png");
+    background-repeat: no-repeat;
+    background-position: -178px -103px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.con figcaption p time {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+.no {
+    background-color: #FCF8E3;
+    color: #C09853;
+    border: 1px solid #FBEED5;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 15px;
+}
+.thecon{
+    background-color: white;
+    border-top: 1px solid white;
+}
+.thecon figure {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.thecon figure img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #DDDDDD;
+}
+.thecon figure figcaption{
+    text-align: center;
+}
+.thecon figure figcaption a{
+    font-size: 14px;
+    color: #333333;
+}
+.thecon figure figcaption a:hover{
+    color: #0AA284;
+    text-decoration: underline;
+}
+.tip {
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    color: #C09853;
+    width: 97%;
+    margin: 0 auto;
+    height: 35px;
+    margin-top: 21px;
+    line-height: 35px;
+    text-indent: 10px;
+    font-size: 14px;
+}
+.tip span{
+    margin: 0 5px;
+    color: #0AA284;
+}
+.Separate{
+    height: 50px;
+    clear: both;
+}

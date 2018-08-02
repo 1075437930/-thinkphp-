@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="../Public/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/Css/header.css">
+    <link href="../Public/Css/login.css" rel="stylesheet">
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/dist/js/bootstrap.min.js"></script>
+    <script>
+        var login="<{:U('Login/login')}>";
+        var error1="<{$_GET['error1']}>";
+        var error2="<{$_GET['error2']}>";
+        var app="__APP__";
+    </script>
+    <script src="../Public/Js/login.js"></script>
+    <style>
+        .error1{
+            display: none;
+        }
+        .err{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content main">
+        <section>
+            <h1>登录</h1>
+            <form method="post" action="__URL__/check">
+                <p class="error1"></p>
+                <div class="form-group">
+                    <input type="text" name="user" placeholder="用户名" class="auth">
+
+                </div>
+                <p class="err"><img src="../Public/Images/2017-01-10_002144.png">用户名不能为空</p>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="密码" class="auth">
+                </div>
+                <p class="err"><img src="../Public/Images/2017-01-10_002144.png">密码不能为空</p>
+                <div class="form-group">
+                    <input type="checkbox" name="rem" value="1" checked>
+                    <img src="../Public/Images/2017-01-07_203526.png" class="bimg">
+                    <span>记住我</span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="登录">
+                    <input type="button" value="注册">
+                </div>
+            </form>
+        </section>
+        <include file="Public:footer"/>
+    </div>
+
+</body>
+</html>

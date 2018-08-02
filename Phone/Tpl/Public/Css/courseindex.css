@@ -1,0 +1,124 @@
+body{
+    background-color: #F1F1F1;
+}
+.content{
+    width: 100%;
+}
+.acmain a:hover{
+   color: #0AA284!important;
+}
+.selectcity{
+    float: left;
+}
+.myacti{
+    float: right;
+}
+.toh {
+    margin: 0 auto;
+    font-weight: 100;
+}
+.selectcity{
+    color: #0AA284;
+}
+.actip {
+    font-size: 30px;
+    float: left;
+}
+.myacti a {
+    background: #0AA284;
+    color: white;
+    border: 1px solid #3BB59D;
+    font-size: 15px;
+    display: inline-block;
+    width: 83px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+.acmain {
+    background-color:#F4F6F8;
+    border-top: 1px solid #E8E8E8;
+    margin-top: 24px;
+}
+.acmain .contain {
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.contain aside section {
+    background-color: white;
+    margin-bottom: 18px;
+}
+
+.classification h2 {
+    border-bottom: 1px solid #DDDDDD;
+    font-weight: 100;
+    color: #333333;
+    font-size: 20px;
+    height: 37px;
+    line-height: 37px;
+    text-indent: 10px;
+}
+.cla-con {
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.cla-con a {
+    color: #787878;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top: 12px;
+    display: inline-block;
+}
+.separate{
+    height: 20px;
+}
+
+.brand figure {
+    float: left;
+    margin-left: 13px;
+    width: 119px;
+    border: 1px solid #DDDDDD;
+    margin-top: 15px;
+}
+.brand figure img{
+    width: 100%;
+    height: 100%;
+}
+.cour-con figure {
+    float: left;
+    margin-right: 9px;
+    margin-left: 23px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.cour-con figure img {
+    width: 234px;
+    border: 1px solid #F4F6F8;
+    padding: 6px;
+    height: 116px;
+}
+.cour-con figcaption a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 232px;
+    margin-left: 6px;
+    font-size: 15px;
+    display: inline-block;
+}
+.contain article section{
+    background-color: white;
+    margin-bottom: 30px;
+}
+.contain article section h1 {
+    border-bottom: 1px solid #DDDDDD;
+    width: 95%;
+    margin: 0 auto;
+    height: 41px;
+    line-height: 40px;
+    font-weight: 100;
+    color: #333333;
+    font-size: 21px;
+}

@@ -1,0 +1,67 @@
+article{
+    background-color:white;
+    margin: 0 auto;
+    border: 2px solid #F2F4F6;
+}
+.course h1 {
+    border-bottom: 1px solid #0AA284;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+section.course h1 a {
+    margin-left: 18px;
+    font-weight: normal;
+    font-size: 18px;
+    height: 40px;
+    border-bottom: 1px solid #0AA284;
+    float: left;
+    color: #0AA284;
+    margin-top: 4px!important;
+}
+.course{
+    margin-top: 10px;
+}
+.course figcaption a:hover{
+    text-decoration: underline;
+}
+.course figure {
+    margin-right: 7px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.course figure img {
+    width: 100%;
+    border: 1px solid #F4F6F8;
+    padding: 6px;
+    height: 108px;
+}
+figcaption a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 198px;
+    margin-left: 14px;
+    font-size: 15px;
+    display: inline-block;
+}
+.more {
+    clear: both;
+    text-align: center;
+    margin-top: 22px!important;
+    height: 40px;
+    line-height: 40px;
+}
+
+.no {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #DFF0D8;
+    color: #468847;
+    height: 40px;
+    margin-top: 18px;
+    line-height: 40px;
+    text-indent: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}

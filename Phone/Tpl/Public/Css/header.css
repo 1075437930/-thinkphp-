@@ -1,0 +1,22 @@
+body {
+    padding-top: 70px;
+}
+.row.footer {
+    margin-top: 51px;
+}
+.clear{
+    clear: both;
+}
+.backtop {
+    position: fixed;
+    background: url("../Images/return_bg.png") no-repeat;
+    height: 50px;
+    width: 50px;
+    right: 13px;
+    bottom: 21px;
+    background-position: 2px -50px;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.9;
+}

@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12416f48-872e-43a7-b9aa-d9ba10ad05ca" name="Default" comment="" />
+    <ignored path="kt.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="kt" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="phone.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phone.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.25">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonAction.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Phone/Lib/Action/PersonAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.394737">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1485604875509" expanded="true" signature="409:603" placeholder="select subsc... subscribe" />
+                <marker date="1485604875509" expanded="true" signature="847:1075" placeholder="select colle... collection" />
+                <marker date="1485604875509" expanded="true" signature="1322:1535" placeholder="select thesu... thesubscribe" />
+                <marker date="1485604875509" expanded="true" signature="1780:1981" placeholder="select subac... subacti" />
+                <marker date="1485604875509" expanded="true" signature="2229:2447" placeholder="select fabul... fabulous" />
+                <marker date="1485604875509" expanded="true" signature="3008:3221" placeholder="select thesu... thesubscribe" />
+                <marker date="1485604875509" expanded="true" signature="3351:3486" placeholder="select count... collection" />
+                <marker date="1485604875509" expanded="true" signature="3825:4094" placeholder="select colle... collection" />
+                <marker date="1485604875509" expanded="true" signature="4630:4758" placeholder="select count... fabulous" />
+                <marker date="1485604875509" expanded="true" signature="5049:5290" placeholder="select fabul... fabulous" />
+                <marker date="1485604875509" expanded="true" signature="5816:6010" placeholder="select subsc... subscribe" />
+                <marker date="1485604875509" expanded="true" signature="6254:6482" placeholder="select colle... collection" />
+                <marker date="1485604875509" expanded="true" signature="6729:6942" placeholder="select thesu... thesubscribe" />
+                <marker date="1485604875509" expanded="true" signature="7187:7388" placeholder="select subac... subacti" />
+                <marker date="1485604875509" expanded="true" signature="7636:7854" placeholder="select fabul... fabulous" />
+                <marker date="1485604875509" expanded="true" signature="8415:8628" placeholder="select thesu... thesubscribe" />
+                <marker date="1485604875509" expanded="true" signature="8758:8893" placeholder="select count... collection" />
+                <marker date="1485604875509" expanded="true" signature="9232:9501" placeholder="select colle... collection" />
+                <marker date="1485604875509" expanded="true" signature="10037:10165" placeholder="select count... fabulous" />
+                <marker date="1485604875509" expanded="true" signature="10456:10697" placeholder="select fabul... fabulous" />
+                <marker date="1485604875509" expanded="true" signature="11055:11190" placeholder="select count... collection" />
+                <marker date="1485604875509" expanded="true" signature="11501:11770" placeholder="select colle... collection" />
+                <marker date="1485604875509" expanded="true" signature="16297:16485" placeholder="select count... user" />
+                <marker date="1485604875509" expanded="true" signature="16760:17071" placeholder="select user.... user" />
+                <marker date="1485604875509" expanded="true" signature="17425:17562" placeholder="select * fro... comment" />
+                <marker date="1485604875509" expanded="true" signature="17905:18126" placeholder="select comme... comment" />
+                <marker date="1485604875509" expanded="true" signature="18238:18462" placeholder="select count... comment" />
+                <marker date="1485604875509" expanded="true" signature="18858:19173" placeholder="select comme... comment" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mycomment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/mycomment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mycomment.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/mycomment.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.5833333">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/message.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.138889">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/header.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/register.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/artindex.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Article/artinfo.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Site/siteartall.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Site/nologin.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/sitenologin.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Index/index.html" />
+        <option value="$PROJECT_DIR$/Phone/Lib/Action/SiteAction.class.php" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/siteartall.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Theme/theartall.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/theartall.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/header.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Theme/nologin.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Site/index.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/siteindex.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/actiindex.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Activity/index.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Activity/activinfo.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/activinfo.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Activity/classall.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/acticlassall.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Activity/actilist.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/actilist.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Activity/myacti.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/myacti.css" />
+        <option value="$PROJECT_DIR$/Phone/Lib/Action/ThemeAction.class.php" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Theme/index.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/courseindex.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Course/index.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Course/courinfo.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/courinfo.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Course/classall.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/classall.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Course/brall.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/brall.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Course/mycourse.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/mycourse.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/search.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Search/index.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Person/myindex.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/myindex.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Person/mycoll.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/mycoll.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/settings.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Person/settings.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Person/message.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/message.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/artinfo.css" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Person/mycomment.html" />
+        <option value="$PROJECT_DIR$/Phone/Tpl/Public/Css/mycomment.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\wamp\www\kt\Admin\Tpl\Index" />
+      <recent name="F:\wamp\www\kt\Public\Js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wamp\www\kt\Phone\Tpl\Public\Js" />
+      <recent name="F:\wamp\www\kt\Phone\Tpl\Public\Css" />
+      <recent name="F:\wamp\www\kt\Phone\Tpl" />
+      <recent name="F:\wamp\www\kt\Phone\Lib\Action" />
+      <recent name="F:\wamp\www\kt\Phone\Tpl\Public\Images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12416f48-872e-43a7-b9aa-d9ba10ad05ca" name="Default" comment="" />
+      <created>1483184018706</created>
+      <option name="number" value="Default" />
+      <updated>1483184018706</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17941177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Site/siteartall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/siteartall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/Tpl/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Theme/theartall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/sitenologin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Theme/nologin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6157895">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/siteindex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/activinfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6333333">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Activity/activinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5666666">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/acticlassall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55789477">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/actiindex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="284" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Activity/classall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Activity/actilist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6894736">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Activity/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/actilist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56842107">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/myacti.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78333336">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Activity/myacti.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2263157">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Lib/Action/ActivityAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18947369">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Theme/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5555556">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Lib/Action/ThemeAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38070175">
+          <caret line="16" column="188" selection-start-line="16" selection-start-column="188" selection-end-line="16" selection-end-column="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Article/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/courseindex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48333332">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/courinfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53333336">
+          <caret line="126" column="1" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/classall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Course/courinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57894737">
+          <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/brall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.11666667">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Course/classall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Course/brall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23684211">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Course/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.25">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Lib/Action/CourseAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/mycourse.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Course/mycourse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38070175">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3636365">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Lib/Action/SearchAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485762138140" expanded="true" signature="283:389" placeholder="select thear... thearticle" />
+            <marker date="1485762138140" expanded="true" signature="1486:1592" placeholder="select thear... thearticle" />
+            <marker date="1485762138140" expanded="true" signature="2705:2762" placeholder="select * fro... theme" />
+            <marker date="1485762138140" expanded="true" signature="2895:2949" placeholder="select * fro... theme" />
+            <marker date="1485762138140" expanded="true" signature="3077:3133" placeholder="select * fro... site" />
+            <marker date="1485762138140" expanded="true" signature="3266:3319" placeholder="select * fro... site" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52105266">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/myindex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7272727">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="133" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/mycoll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73333335">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/myindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18947369">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/mycoll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6210526">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Search/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/settings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.333333">
+          <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/artinfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5736842">
+          <caret line="336" column="20" selection-start-line="336" selection-start-column="20" selection-end-line="336" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/message.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5833333">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.138889">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Public/Css/mycomment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5833333">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Tpl/Person/mycomment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.25">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phone/Lib/Action/PersonAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.394737">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485604875509" expanded="true" signature="409:603" placeholder="select subsc... subscribe" />
+            <marker date="1485604875509" expanded="true" signature="847:1075" placeholder="select colle... collection" />
+            <marker date="1485604875509" expanded="true" signature="1322:1535" placeholder="select thesu... thesubscribe" />
+            <marker date="1485604875509" expanded="true" signature="1780:1981" placeholder="select subac... subacti" />
+            <marker date="1485604875509" expanded="true" signature="2229:2447" placeholder="select fabul... fabulous" />
+            <marker date="1485604875509" expanded="true" signature="3008:3221" placeholder="select thesu... thesubscribe" />
+            <marker date="1485604875509" expanded="true" signature="3351:3486" placeholder="select count... collection" />
+            <marker date="1485604875509" expanded="true" signature="3825:4094" placeholder="select colle... collection" />
+            <marker date="1485604875509" expanded="true" signature="4630:4758" placeholder="select count... fabulous" />
+            <marker date="1485604875509" expanded="true" signature="5049:5290" placeholder="select fabul... fabulous" />
+            <marker date="1485604875509" expanded="true" signature="5816:6010" placeholder="select subsc... subscribe" />
+            <marker date="1485604875509" expanded="true" signature="6254:6482" placeholder="select colle... collection" />
+            <marker date="1485604875509" expanded="true" signature="6729:6942" placeholder="select thesu... thesubscribe" />
+            <marker date="1485604875509" expanded="true" signature="7187:7388" placeholder="select subac... subacti" />
+            <marker date="1485604875509" expanded="true" signature="7636:7854" placeholder="select fabul... fabulous" />
+            <marker date="1485604875509" expanded="true" signature="8415:8628" placeholder="select thesu... thesubscribe" />
+            <marker date="1485604875509" expanded="true" signature="8758:8893" placeholder="select count... collection" />
+            <marker date="1485604875509" expanded="true" signature="9232:9501" placeholder="select colle... collection" />
+            <marker date="1485604875509" expanded="true" signature="10037:10165" placeholder="select count... fabulous" />
+            <marker date="1485604875509" expanded="true" signature="10456:10697" placeholder="select fabul... fabulous" />
+            <marker date="1485604875509" expanded="true" signature="11055:11190" placeholder="select count... collection" />
+            <marker date="1485604875509" expanded="true" signature="11501:11770" placeholder="select colle... collection" />
+            <marker date="1485604875509" expanded="true" signature="16297:16485" placeholder="select count... user" />
+            <marker date="1485604875509" expanded="true" signature="16760:17071" placeholder="select user.... user" />
+            <marker date="1485604875509" expanded="true" signature="17425:17562" placeholder="select * fro... comment" />
+            <marker date="1485604875509" expanded="true" signature="17905:18126" placeholder="select comme... comment" />
+            <marker date="1485604875509" expanded="true" signature="18238:18462" placeholder="select count... comment" />
+            <marker date="1485604875509" expanded="true" signature="18858:19173" placeholder="select comme... comment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

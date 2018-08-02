@@ -1,0 +1,434 @@
+.content {
+    width: 1000px;
+    margin: 64px auto;
+    margin-bottom: 26px;
+}
+a:hover{
+    color: #0AA284!important;
+}
+article {
+    width: 66%;
+    float: left;
+    background-color: white;
+}
+aside {
+    width: 32%;
+    float: right;
+}
+.art h1 {
+    color: #333333;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 16px!important;
+    width: 94%;
+    margin: 0 auto;
+}
+.info {
+    margin-top: 16px!important;
+    width: 94%;
+    margin: 0 auto;
+    border-bottom: 1px dashed #D3D3D3;
+    height: 98px;
+}
+.info p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.info p span {
+    color: #999999;
+    margin-right: 5px;
+}
+.info p span,.info p img,.info p a{
+    float: left;
+}
+.info p img {
+    margin-top: 7px;
+    margin-left: 8px;
+}
+.lin {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30%;
+    display: inline-block;
+}
+.lin:hover{
+    text-decoration: underline;
+}
+.zlin:hover{
+    background-color: #0AA284;
+    color: white!important;
+}
+.zlin{
+    color: #787878;
+}
+.con{
+    width: 94%;
+    margin: 15px auto;
+    overflow: hidden;
+}
+.con img{
+    width: 550px;
+}
+.fabulous {
+    width: 60px;
+    margin: 30px auto;
+    border-radius: 42px;
+    height: 60px;
+    border: 1px solid #E2E2E2;
+    background: url("../Images/social_share.png") no-repeat;
+    cursor: pointer;
+}
+.fabulous:hover{
+    background-color: #DEDEDE;
+}
+.fabtip {
+    position: fixed;
+    left: 40%;
+    top: 60%;
+    width: 120px;
+    border-radius: 11px;
+    height: 40px;
+    background-color: #595959;
+    margin-left: -50px;
+    display: none;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.share{
+    width: 94%;
+    margin: 0 auto;
+}
+.sha-le {
+    float: left;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+.sha-ri{
+    float: right;
+    width: 123px;
+}
+.sha-le span {
+    float: left;
+    margin-right: 14px;
+    color: #787878;
+    font-size: 15px;
+}
+
+.sha-le {
+    float: left;
+    width: 270px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.coll {
+    width: 67px;
+    height: 23px;
+    border: 1px solid #E6E6E6;
+    float: right;
+    line-height: 23px;
+    cursor: pointer;
+}
+.coll:hover{
+    background-color: #DEDEDE;
+}
+.coll span {
+    font-size: 10px;
+    color: #787878;
+    margin-top: 1px;
+}
+.coll span, .coll img {
+    float: left;
+    margin-left: 4px;
+}
+.coll img {
+    margin-top: 5px;
+}
+section.recommend {
+    margin-top: 12px!important;
+    width: 94%;
+    margin: 0 auto;
+}
+section.recommend h1 {
+    border-bottom: 1px solid #E3E3E3;
+    height: 30px;
+}
+section.recommend p {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #CCCCCC;
+    font-size: 15px;
+}
+section.recommend p a{
+    color: #16A085;
+}
+section.recommend p span{
+    color: #39465F;
+}
+section.recommend p a:hover{
+    text-decoration: underline;
+}
+.comment{
+    margin-top: 34px!important;
+    width: 94%;
+    margin: 0 auto;
+    background-color: #F1F1F1;
+    height: 246px;
+}
+.comment .form-group p{
+    float: left;
+}
+
+section.comment h1 {
+    height: 45px;
+    line-height: 45px;
+    text-indent: 23px;
+}
+section.comment .form-group {
+    width: 93%;
+    margin: 0 auto;
+}
+.comment .form-group textarea {
+    resize: none;
+    border: 1px solid #CCCCCC;
+    width: 100%;
+    height: 97px;
+}
+.form-group.third {
+    margin-top: 9px!important;
+    height: 30px;
+    line-height: 30px;
+}
+.form-group.third p {
+    font-size: 14px;
+    color: #333333;
+    vertical-align: middle;
+}
+.third input[type='button']{
+    float: right;
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    color: #666666;
+    height: 29px;
+    cursor: pointer;
+}
+.re button{
+    float: right;
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    color: #666666;
+    height: 29px;
+    cursor: pointer;
+    margin-right: 29px;
+}
+.third input[type='button']:hover{
+    border: 1px solid #0AA284;
+}
+.comment-info{
+    margin-top: 20px!important;
+    width: 94%;
+    margin: 0 auto;
+}
+.comment-info figure .head{
+    float: left;
+    height: 35px;
+    width: 35px;
+}
+.reps img{
+    float: left;
+    width: 24px;
+    height: 21px;
+}
+.reps .reps-co{
+    float: left;
+    font-size: 13px;
+}
+.reps-co time{
+    color: #999999;
+}
+.reps-co{
+    float: left;
+    margin-left: 10px;
+}
+.reps-co p span{
+    margin-right: 10px;
+}
+p.error {
+    background: #F2DEDE;
+    width: 94%;
+    margin: 0 auto;
+    height: 33px;
+    line-height: 33px;
+    text-indent: 10px;
+    color: #B94A48;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 10px;
+}
+.reply {
+    float: right;
+    font-size: 13px;
+    color: #999999;
+    display: none;
+}
+.reps {
+    clear: both;
+    width: 90%;
+    float: right;
+}
+p.comment-con {
+    margin-bottom: 10px;
+}
+.comment-info figure:hover .reply{
+    display: block;
+}
+section.comment-info figcaption {
+    font-size: 14px;
+    margin-left: 11px;
+    float: left;
+}
+.comment-info figure{
+    border-bottom:1px dashed #CCCCCC ;
+    margin-top: 12px;
+}
+section.comment-info figcaption span{
+    font-weight: bold;
+    margin-right: 11px;
+}
+section.comment-info figcaption time{
+    font-size: 10px;
+    color: #999999;
+}
+.re{
+    position: fixed;
+    background-color: #F1F1F1;
+    width: 500px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -100px;
+    border: 1px solid darkcyan;
+    display: none;
+}
+.re h1{
+    height: 45px;
+    line-height: 45px;
+    text-indent: 23px;
+}
+.re textarea{
+    resize: none;
+    border: 1px solid #CCCCCC;
+    width: 90%;
+    height: 97px;
+    margin: 0 auto;
+    margin-left: 19px;
+}
+span.direct {
+    margin-left: 12px;
+}
+.close {
+    float: right;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 44px;
+    width: 20px;
+    height: 20px;
+    text-indent: 0;
+    font-size: 10px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.about{
+    background-color: white;
+}
+section.about h1 {
+    width: 95%;
+    border-bottom: 1px solid #E3E3E3;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+}
+.about figure img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #E3E3E3;
+}
+.about figure figcaption{
+    float: left;
+}
+.about figure figcaption a {
+    color: #0AA284;
+    font-size: 19px;
+    display: inline-block;
+    width: 206px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    height: 25px;
+}
+.about figure figcaption a:hover{
+    text-decoration: underline;
+}
+.nosub {
+    width: 70px;
+    height: 26px;
+    background-color: #0AA284;
+    color: white;
+    border: 1px solid #3BB59D;
+    cursor: pointer;
+    margin-top: 4px;
+}
+.subed{
+    width: 70px;
+    height: 26px;
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    margin-top: 4px;
+}
+section.about figure {
+    width: 95%;
+    margin: 8px auto;
+    height: 91px;
+}
+.about figure figcaption {
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+section.recommend.hot {
+    background: white;
+    width: 100%;
+}
+section.recommend.hot h1{
+    width: 95%;
+    border-bottom: 1px solid #E3E3E3;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+}
+section.recommend.hot p{
+    width: 95%;
+    margin: 0 auto;
+    clear: both;
+    height: auto;
+}
+.adver figure img{
+    width: 100%;
+    height: 100%;
+}
+.adver figure{
+    margin-top: 10px;
+}

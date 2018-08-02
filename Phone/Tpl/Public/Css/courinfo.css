@@ -1,0 +1,194 @@
+.content {
+    margin-bottom: 53px;
+}
+
+
+section{
+    background-color: white;
+}
+.interval{
+    height: 20px;
+}
+
+.top figcaption h1 {
+    line-height: 31px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+.top figcaption p {
+    margin-left: 12px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.top figcaption p span {
+    margin-right: 8px;
+}
+.bp {
+    color: #787878;
+    background: #F2F2F2;
+}
+.bp:hover {
+    color: white!important;
+    background: #0AA284;
+}
+.ly{
+    color: #0AA284;
+}
+.ly:hover{
+    text-decoration: underline;
+}
+.study div{
+    float: right;
+}
+.study {
+    height: 45px;
+    margin-top: 15px;
+    line-height: 45px;
+}
+section.study a {
+    background: #16A085;
+    color: white;
+    width: 87px;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    border: 1px solid #45B39E;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 7px;
+    float: left;
+}
+section.study a:hover{
+    color: white!important;
+}
+section.study a img {
+    float: left;
+    margin-left: 11px;
+    margin-top: 6px;
+}
+section.study a span{
+    float: left;
+}
+section.study button {
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    float: left;
+    margin-top: 7px;
+    height: 29px;
+    width: 70px;
+    line-height: 29px;
+    margin-left: 12px;
+    margin-right: 21px;
+    cursor: pointer;
+}
+section.info {
+    margin-top: 15px;
+}
+section.info h1 {
+    width: 95%;
+    margin: 0 auto;
+    height: 46px;
+    border-bottom: 1px solid #E8E8E8;
+    line-height: 46px;
+    font-weight: 500;
+    font-size: 25px;
+}
+section.info .con {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.about{
+    background-color: white;
+}
+section.about h1 {
+    width: 95%;
+    border-bottom: 1px solid #E3E3E3;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+}
+.about figure img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #E3E3E3;
+}
+section.about figure {
+    margin-top: 12px!important;
+    width: 95%;
+    margin: 0 auto;
+}
+.about figure figcaption {
+    float: left;
+    margin-left: 9px;
+    margin-top: 25px;
+}
+.about figure figcaption a {
+    font-weight: bold;
+    color: #16A085;
+}
+.about figure figcaption a:hover{
+    text-decoration: underline;
+}
+.about {
+    background-color: white;
+    height: 138px;
+}
+.new h1{
+    width: 95%;
+    border-bottom: 1px solid #E3E3E3;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+}
+.new figure {
+    width: 95%;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    margin-top: 11px;
+}
+.new figure img{
+    width: 100%;
+    height: 100%;
+}
+.new figure figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #4A4D51;
+    color: white;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+section.new {
+    margin-top: 14px;
+}
+.con {
+    line-height: 33px;
+}
+.interval.spacing {
+    height: 200px;
+}
+.tip{
+    position: fixed;
+    left: 50%;
+    top:50%;
+    background-color: #383838;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.courimg{
+    width: 100%;
+    height: 70px;
+    margin-top: 52px;
+}

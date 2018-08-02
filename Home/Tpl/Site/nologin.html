@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有站点</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/sitenologin.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function(){
+            $('.le li:last-child').css({'border-bottom':'1px solid #DDDDDD'});
+            $('.subbut').click(function(){
+                $('.tip').show();
+                setTimeout(function(){
+                    $('.tip').hide()
+                },2000);
+            });
+            $('.le li a').hover(function(){
+                $(this).css({'color':'#0AA284'})
+            },function(){
+                $(this).css({'color':'#333333'})
+            })
+            $('.le li a').each(function(){
+                if("<{$_GET['id']}>"==$(this).attr('uid')){
+                    var obj=$(this)
+                    $(this).css({'background':'#0AA284','color':'white'})
+                    obj.off('hover');
+                    obj.hover(function(){
+                        $(this).css({'color':'white'})
+                    },function(){
+                        $(this).css({'color':'white'})
+                    })
+                }
+            })
+            if(!"<{:isset($_GET['id'])}>"){
+                $('.le li a').eq(0).off('hover');
+                $('.le li a').eq(0).css({'background':'#0AA284','color':'white'})
+                $('.le li a').eq(0).hover(function(){
+                    $(this).css({'color':'white'})
+                },function(){
+                    $(this).css({'color':'white'})
+                })
+            }
+        })
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <h1>热门站点</h1>
+        <article class="mai">
+            <section class="sits">
+                <aside class="le">
+                    <ul>
+                       <foreach name="clas" item="row">
+                            <li ><a href="__APP__/Site/nologin/id/<{$row['id']}>" uid="<{$row['id']}>" class="ss"> <{$row['name']}></a></li>
+                       </foreach>
+                    </ul>
+                </aside>
+                <article class="ri">
+                    <if condition="isset($sits)">
+                        <foreach name="sits" item="row">
+                            <figure>
+                                <img src="__PUBLIC__/Uploads/sitelogo/<{$row['img']}>">
+                                <figcaption>
+                                     <a href="__APP__/Site/siteartall/id/<{$row['id']}>"><{$row['name']}></a>
+                                    <button class="subbut">+订阅</button>
+                                     <div class="tip">请先登录</div>
+                                </figcaption>
+                                <div class="clear"></div>
+                            </figure>
+                        </foreach>
+                        <else/>
+                        <figure class="no">
+                            暂无相关站点
+                        </figure>
+                    </if>
+                </article>
+                <div class="clear"></div>
+            </section>
+        </article>
+        <div class="clear"></div>
+    </div>
+    <include file="Public:footer"/>
+</body>
+</html>

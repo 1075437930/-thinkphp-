@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主题</title>
+    <link href="../Public/Css/base.css" rel="stylesheet">
+    <link href="../Public/Css/theindex.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Public/Css/page.css" media="all" />
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="../Public/Js/header.js"></script>
+    <script src="__PUBLIC__/Js/html5shiv.js"></script>
+    <script>
+        $(function(){
+            $('.mysite li').click(function(){
+                va=$(this).attr('sid');
+                na=$(this).attr('na');
+                $.ajax({
+                    url: "<{:U('arlist')}>",
+                    type: "get",
+                    data: {'id': va,'na':na},
+                    success: function (data) {
+                        $('article section').html(data)
+                    }
+                })
+            })
+            $(document).on('click','.the-con button',function(){
+                obj=$(this);
+                vid=obj.attr('vid');
+                if(obj.html()=='+订阅'){
+                    $.ajax({
+                        url:"<{:U('subhand')}>",
+                        type:"get",
+                        data:{sub:1,article:vid},
+                        success:function(data){
+                            if(data==1){
+                                obj.html('已订阅').removeClass('nosub').addClass('subed')
+                            }
+                        }
+                    })
+                }else {
+                    $.ajax({
+                        url:"<{:U('subhand')}>",
+                        type:"get",
+                        data:{sub:0,article:vid},
+                        success:function(data){
+                            if(data==0){
+                                obj.html('+订阅').removeClass('subed').addClass('nosub')
+                            }
+                        }
+                    })
+                }
+            })
+
+            $('.sites .drop').click(function(){
+                $.ajax({
+                    url:"<{:U('theshow')}>",
+                    type:'get',
+                    success:function(data){
+                        $('article section').html(data)
+                        $('article ul li').eq(0).css({'background':'#0AA284','color':'white'})
+                    }
+                })
+            });
+
+            $(document).on('click','article ul li',function(){
+                $(this).css({'background':'#0AA284','color':'white'}).siblings().css({'background':'','color':'#333333'});
+                va=$(this).attr('uid');
+                $.ajax({
+                    url: "<{:U('findthe')}>",
+                    type: "get",
+                    data: {'id': va},
+                    success: function (data) {
+                        $('.the-con').html(data)
+                    }
+                })
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <include file="Public:header"/>
+    <div class="content">
+        <aside>
+            <section class="search">
+                <form action="__APP__/Search/index" method="get">
+                    <input type="text" placeholder="搜索主题" name="thekey">
+                </form>
+            </section>
+            <section class="sites">
+                <div class="drop"><i></i><span>热门主题</span></div>
+            </section>
+            <section class="mysite">
+                <div class="drop"><i class="my"></i><span>我的主题</span></div>
+                <ul class="dropdown">
+                    <foreach name="mys" item="row">
+                        <li sid="<{$row['id']}>" na="<{$row['name']}>"><img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>"><span><{$row['name']}></span></li>
+                    </foreach>
+                </ul>
+            </section>
+        </aside>
+        <article>
+            <section>
+                <if condition="!empty($mys)">
+                    <foreach name="mys" item="row">
+                        <figure>
+                            <img src="__PUBLIC__/Uploads/theimg/<{$row['img']}>">
+                            <figcaption>
+                                <a href="__APP__/Theme/theartall/id/<{$row['id']}>"><{$row['name']}></a>
+                            </figcaption>
+                            <div class="clear"></div>
+                        </figure>
+                    </foreach>
+                    <else/>
+                    <div class="none">
+                        你还没有订阅主题,去热门主题频道看看吧
+                    </div>
+                </if>
+                <div class="clear"></div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>

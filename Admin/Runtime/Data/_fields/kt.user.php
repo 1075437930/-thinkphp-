@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'username', 2 => 'password', 3 => 'email', 4 => 'img', 5 => 'admin', 6 => 'registrtime', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(10) unsigned', 'username' => 'varchar(50)', 'password' => 'varchar(100)', 'email' => 'varchar(100)', 'img' => 'varchar(100)', 'admin' => 'int(11)', 'registrtime' => 'int(11)', ), );?>

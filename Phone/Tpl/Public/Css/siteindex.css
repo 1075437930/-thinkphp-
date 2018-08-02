@@ -1,0 +1,41 @@
+body{
+    background-color: #F4F6F8;
+}
+.sitelogo{
+    width: 100%;
+    height:80px;
+}
+.row {
+    margin-bottom: 16px;
+    background-color: white;
+}
+h1{
+    font-size: 19px;
+    border-bottom: 1px solid #0AA284;
+}
+.subed{
+    width: 82px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.nosub {
+    width: 82px;
+    height: 30px;
+    background-color: #0AA284;
+    color: white;
+    border: 1px solid #3BB59D;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.jia a {
+    display: block;
+    margin-top: 12px;
+}
+.thelogo {
+    width: 100%;
+    height: 90px;
+}
